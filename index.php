@@ -25,4 +25,6 @@ include "_includes/contact.php";
 include "_includes/footer.php"
 
 ?>
+
+<link rel="stylesheet" href="Assets/CSS/main.css">
 <script src="Assets/Javascript/script.js"></script>

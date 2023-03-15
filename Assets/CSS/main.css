@@ -24,13 +24,13 @@
 }
 
 @font-face {
-    font-family: Hanuman;
+    font-family: "Hanuman";
     src: url(../Fonts/Hanuman-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
-    font-family: Advent Pro;
+    font-family: "Advent Pro";
     src: url(../Fonts/AdventPro-Regular.ttf);
     font-weight: normal;
 }
