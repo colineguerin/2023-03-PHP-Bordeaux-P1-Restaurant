@@ -1,0 +1,10 @@
+:root {
+    --main-bg-color : #FDFFF5;
+    --dark-color : #102839; /* bg card, texte navbar, h1, premier mot h2, onglets inactifs menu, texte menu, bg button, texte contact, bg footer */
+    --main-text-color : #E1DBCA; /* texte cards, bg onglet actif menu, texte  onglet inactif menu, placeholder form, bg contact */
+    --secondary-title-color : #BA945A; /* gros texte h2, bg champs form, texte footer */
+
+    --title-font : Advent Pro, serif, sans-serif;
+    --secondary-font : Hanuman, serif, sans-serif;
+
+}
