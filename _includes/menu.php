@@ -2,7 +2,7 @@
 
 <section class="ms-menu">
 
-    <h2 class="ms-title-menu-section"><span class="ms-h2-small">La</span><span class="ms-h2-big"> Carte</span></h2>
+    <h2 class="ms-title-menu-section"><span class="ms-h2-small">La </span><span class="ms-h2-big"> Carte</span></h2>
 
     <div class="ms-menu-wrapper">
         <button class="ms-menu-previous"></button>
