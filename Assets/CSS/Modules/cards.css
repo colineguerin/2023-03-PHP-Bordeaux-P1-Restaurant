@@ -9,7 +9,7 @@
 
 .ms-image-card1, .ms-image-card2{
     width: 50vw;
-    height: 45vh;
+    height: auto;
 }
 
 .ms-theConcept, .ms-theFood {
