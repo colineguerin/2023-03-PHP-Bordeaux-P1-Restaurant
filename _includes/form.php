@@ -20,6 +20,8 @@
         <input type="number" class="ms-plates" name="ms-plates" placeholder="Nombre de couverts">
         <input type="date" class="ms-date" name="ms-date" value="<?= date("Y-m-d");?>" min="<?= date("Y-m-d");?>">
         <input type="time" class="ms-hour" name="ms-hour" value="<?php date_default_timezone_set('Europe/Paris'); echo date("H:i");?>" list="hoursList">
+
+        <!-- Datalist to enable only certain hours to book a table -->
         <datalist id="hoursList">
             <option value="12:00">
             <option value="12:30">
