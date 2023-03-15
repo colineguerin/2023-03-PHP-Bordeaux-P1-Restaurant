@@ -40,18 +40,26 @@ body {
 }
 
 .ms-h2-small {
-    color: var(--main-text-color);
+    color: var(--dark-color);
     font-family: Advent Pro;
     font-style: normal;
+    font-size: 2.5rem;
 }
 
 .ms-h2-big {
     color : var(--secondary-title-color);
     font-family: Advent Pro;
     font-style: normal;
+    font-size: 3.75rem;
 }
+
 
 section {
     margin-bottom: 15vh;
+}
+
+
+h2 + * {
+    margin-top: 3vh;
 }
 
