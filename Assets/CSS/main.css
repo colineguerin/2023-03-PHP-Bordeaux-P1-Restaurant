@@ -53,6 +53,13 @@ body {
     font-size: 3.75rem;
 }
 
+
+section {
+    margin-bottom: 15vh;
+}
+
+
 h2 + * {
     margin-top: 3vh;
 }
+

@@ -9,7 +9,7 @@
 
 .ms-image-card1, .ms-image-card2{
     width: 50vw;
-    height: 45vh;
+    height: auto;
 }
 
 .ms-theConcept, .ms-theFood {
@@ -18,7 +18,7 @@
     text-align: center;
     font-size: 40px;
     line-height: 48px;
-    padding-top: 20px;
+    padding-top: 10%;
 }
 
 p.ms-foodText, p.ms-conceptText {
@@ -30,7 +30,22 @@ p.ms-foodText, p.ms-conceptText {
     line-height: 35px;
     align-items: center;
     font-family: Hanuman;
-    padding: 10px;
+    padding: 5%;
+
 }
+
+.ms-h2-small-card {
+    color: var(--main-text-color);
+    font-family: Advent Pro;
+    font-style: normal;
+}
+
+.ms-h2-big-card {
+    color : var(--secondary-title-color);
+    font-family: Advent Pro;
+    font-style: normal;
+}
+
+
 
 
