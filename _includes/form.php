@@ -19,7 +19,19 @@
         <input type="email" class="ms-mail" name="ms-mail" placeholder="E-mail">
         <input type="number" class="ms-plates" name="ms-plates" placeholder="Nombre de couverts">
         <input type="date" class="ms-date" name="ms-date" value="<?= date("Y-m-d");?>" min="<?= date("Y-m-d");?>">
-        <input type="time" class="ms-hour" name="ms-hour" value="<?php date_default_timezone_set('Europe/Paris'); echo date("H:i");?>">
+        <input type="time" class="ms-hour" name="ms-hour" value="<?php date_default_timezone_set('Europe/Paris'); echo date("H:i");?>" list="hoursList">
+        <datalist id="hoursList">
+            <option value="12:00">
+            <option value="12:30">
+            <option value="13:00">
+            <option value="13:30">
+            <option value="14:00">
+            <option value="19:00">
+            <option value="19:30">
+            <option value="20:00">
+            <option value="20:30">
+            <option value="21:00">
+        </datalist>
         <textarea class="ms-demands" name="ms-demands" rows="5" cols="50" placeholder="Demandes particulières"></textarea>
         <input type="submit" class="ms-button" value="Réserver">
     </form>

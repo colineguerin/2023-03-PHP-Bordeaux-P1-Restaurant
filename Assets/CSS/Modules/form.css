@@ -27,6 +27,14 @@ input:read-write, textarea:read-write{
     padding: 0.625rem;
 }
 
+input:focus::placeholder, textarea:focus::placeholder {
+    opacity: 0.2;
+}
+
+input:focus {
+    outline:none;
+}
+
 ::-webkit-input-placeholder, input, textarea {
     font-size: 1.5rem;
     font-family: Hanuman;
@@ -36,7 +44,7 @@ input:read-write, textarea:read-write{
 textarea {
     grid-column-start: 1;
     grid-column-end: 3;
-
+    resize: none;
 }
 
 .ms-button {
