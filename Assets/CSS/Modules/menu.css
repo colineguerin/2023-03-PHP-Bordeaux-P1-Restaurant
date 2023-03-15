@@ -1,21 +1,68 @@
+.ms-menu {
+    font-family: var(--secondary-font);
+    margin-top: 24px;
+}
+
+.ms-title-menu-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Clickable items "entrées", "plats", "desserts" */
+
 .ms-menu-list {
     list-style: none;
     padding-left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
     max-width: 780px;
     margin: 0 auto;
 }
 
-.ms-menu-items:active {
-    -webkit-box-flex: 1;
-    -webkit-box-orient: vertical;
+.ms-menu-items {
+    background-color: var(--dark-color);
+    font-size: 32px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 4px;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-.ms-dish-label .ms-dish-price {
-    color: var(--dark-color);
+.ms-nav-menu-link {
+    text-decoration: none;
+    color: var(--main-text-color);
 }
+
+/* Menu content with list of dishes */
 
 .ms-menu-content {
+    max-width: 780px;
     background-color: var(--main-text-color);
+    display: flex;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.ms-dish-label, .ms-dish-price {
+    color: var(--dark-color);
+    text-align: center;
+}
+
+.ms-dish-label {
+    padding-top: 16px;
+}
+
+.ms-dish-price {
+    padding-top: 8px;
+}
+
+.ms-menu-below {
+    display: flex;
+    justify-content: center;
 }
