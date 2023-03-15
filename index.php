@@ -25,3 +25,4 @@ include "_includes/contact.php";
 include "_includes/footer.php"
 
 ?>
+<script src="Assets/Javascript/script.js"></script>
