@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../assets/css/main.css">
+<!-- <link rel="stylesheet" href="../assets/css/main.css"> -->
 <div class="ms-cards">
     <div class="ms-card1">
         <h3 class="ms-theConcept"><span class="ms-h2-small-card">Le </span><span class="ms-h2-big-card">Concept</span></h3>
