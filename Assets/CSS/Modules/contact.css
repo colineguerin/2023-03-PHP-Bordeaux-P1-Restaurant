@@ -17,6 +17,10 @@
     width: 50%;
 }
 
+iframe {
+    padding-left: 5%;
+}
+
 .ms-contact-infos p{
     height: auto;
     font-family: Hanuman;
@@ -47,49 +51,43 @@ h5 {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 400%;
+    top: 360%;
     left: 60%;
-    right: 40%;
 }
 .ms-clock-png {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 420%;
+    top: 375%;
     left: 60%;
-    right: 40%;
 }
 .ms-telephone-png {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 440%;
+    top: 390%;
     left: 60%;
-    right: 40%;
 }
 .ms-facebook-png {
-    height: 45px;
-    width: 45px;
+    height: 64px;
+    width: 64px;
     position: absolute;
-    top: 460%;
-    left: 60%;
-    right: 40%;
+    top: 405%;
+    left: 55%;
 }
 .ms-insta-png {
-    height: 45px;
-    width: 45px;
+    height: 64px;
+    width: 64px;
     position: absolute;
-    top: 480%;
-    left: 60%;
-    right: 40%;
+    top: 405%;
+    left: 70%;
 }
 .ms-tripadvisor-png {
-    height: 45px;
-    width: 45px;
+    height: 64px;
+    width: 64px;
     position: absolute;
-    top: 490%;
-    left: 60%;
-    right: 40%;
+    top: 405%;
+    left: 85%;
 }
 
 
