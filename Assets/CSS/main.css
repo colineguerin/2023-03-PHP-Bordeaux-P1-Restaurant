@@ -23,4 +23,32 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Hanuman;
+    src: url(../Fonts/Hanuman-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Advent Pro;
+    src: url(../Fonts/AdventPro-Regular.ttf);
+    font-weight: normal;
+}
+
+body {
+    background-color : var(--main-bg-color)
+}
+
+.ms-h2-small {
+    color: var(--main-text-color);
+    font-family: Advent Pro;
+    font-style: normal;
+}
+
+.ms-h2-big {
+    color : var(--secondary-title-color);
+    font-family: Advent Pro;
+    font-style: normal;
+}
+
 
