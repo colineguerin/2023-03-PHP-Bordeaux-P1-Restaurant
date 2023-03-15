@@ -1,5 +1,5 @@
 <!-- <link rel="stylesheet" href="../assets/css/main.css"> -->
-<div class="ms-cards">
+<section class="ms-cards">
     <div class="ms-card1">
         <h3 class="ms-theConcept"><span class="ms-h2-small-card">Le </span><span class="ms-h2-big-card">Concept</span></h3>
         <p class="ms-conceptText">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -18,5 +18,5 @@
             Ut sed arcu non elit vestibulum commodo in in eros. Etiam posuere, lectus eu rhoncus efficitur, velit nisl tempus purus, in pretium neque nisi vitae tortor. Quisque ut accumsan dolor.</p>
     </div>
 
-</div>
+</section>
 
