@@ -1,0 +1,29 @@
+.ms-booking {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    padding: 2%;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    grid-template-rows: repeat(3, 65px) 1fr 1fr;
+    gap: 10px;
+    font-family: Hanuman;
+}
+
+input, textarea {
+    background-color: var(--secondary-title-color);
+    border-radius: 10px;
+    border: none;
+}
+
+input {
+    height: 60%;
+}
+
+textarea {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
