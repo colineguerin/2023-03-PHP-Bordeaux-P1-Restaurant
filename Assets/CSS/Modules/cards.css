@@ -1,0 +1,36 @@
+.ms-cards {
+    background-color: #102839;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.ms-image-card1, .ms-image-card2{
+    width: 50vw;
+    height: 45vh;
+}
+
+.ms-theConcept, .ms-theFood {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+
+}
+
+p.ms-foodText, p.ms-conceptText {
+    color: var(--main-text-color);
+    height: 80%;
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    align-items: center;
+    font-family: Hanuman;
+    padding: 10px;
+}
+
+
