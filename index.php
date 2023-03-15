@@ -1,5 +1,5 @@
-//fichier php du head
 <?php
+//fichier php du head
 include "_includes/head.php"
 ?> <h1>Test</h1>
 <?php
