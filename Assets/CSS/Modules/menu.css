@@ -1,0 +1,21 @@
+.ms-menu-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.ms-menu-items:active {
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+}
+
+.ms-dish-label .ms-dish-price {
+    color: var(--dark-color);
+}
+
+.ms-menu-content {
+    background-color: var(--main-text-color);
+}
