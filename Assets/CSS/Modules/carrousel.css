@@ -1,9 +1,18 @@
 .ms-carousel {
     width: 50vw;
+    margin: auto;
+}
+
+.ms-carousel-photos {
+    background-color: #000;
 }
 
 .ms-carousel-photos img{
-    width: 50vw;
+    width: 10vw;
+}
+
+.ms-carousel-photo {
+
 }
 
 input[type=radio] {
