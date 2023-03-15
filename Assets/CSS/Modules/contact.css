@@ -1,0 +1,96 @@
+.ms-contact {
+    background-color: var(--main-text-color);
+    height: 80vh;
+}
+
+.ms-contact-title {
+    text-align: center;
+
+}
+
+.ms-map-infos {
+   display: flex;
+    height: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.ms-contact-infos p{
+    height: auto;
+    font-family: Hanuman;
+    font-size: 24px;
+    color: var(--dark-color);
+    padding-top: 32px;
+
+
+}
+
+h5 {
+    font-family: "Advent Pro";
+    font-size: 40px;
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+.ms-contact-infos {
+    text-align: center;
+}
+
+.ms-infos-text {
+    padding-top: 16px;
+}
+
+
+.ms-place-png {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 400%;
+    left: 60%;
+    right: 40%;
+}
+.ms-clock-png {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 420%;
+    left: 60%;
+    right: 40%;
+}
+.ms-telephone-png {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 440%;
+    left: 60%;
+    right: 40%;
+}
+.ms-facebook-png {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 460%;
+    left: 60%;
+    right: 40%;
+}
+.ms-insta-png {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 480%;
+    left: 60%;
+    right: 40%;
+}
+.ms-tripadvisor-png {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 490%;
+    left: 60%;
+    right: 40%;
+}
+
+
+
