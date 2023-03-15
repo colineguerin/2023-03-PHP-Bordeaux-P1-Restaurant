@@ -1,0 +1,11 @@
+.ms-carousel {
+    width: 50vw;
+}
+
+.ms-carousel-photos img{
+    width: 50vw;
+}
+
+input[type=radio] {
+    display: none;
+}
