@@ -1,11 +1,9 @@
 *{
-    color: #102839;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Gill Sans MT";
-    text-decoration: none;
 }
+
 
 .navigation-globale{
     width: 100vw;
@@ -16,7 +14,9 @@
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     position: fixed;
     top: 0;
+    z-index: 5;
 }
+
 
 .logo{
     height: 17vh;
@@ -34,30 +34,39 @@ ul{
 
 li{
     font-size: 1.5em;
+    color: #102839;
+    font-family: var(--title-font);
+}
+
+.surlign{
+    text-decoration: none;
+    color: #102839;
+
 }
 
 .accueil{
-    background-image: url("../Assets/Images/trieste-g46457e002_1920.jpg");
-    height: 100%;
+    background-image: url("../../Images/trieste-g46457e002_1920.jpg");
+    height: 100vh;
     background-position: center;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
-h1{
+.titre{
     margin: 4% 4% 0 auto;
     font-size: 3em;
+    color: #102839;
+    font-family: var(--title-font);
 }
 
-h2{
+.sousTitre{
     margin: 0 4% auto auto;
-    font-family: Calibri;
+    font-family: var(--secondary-font);
     font-size: 1em;
+    color: #102839;
 }
-
-
 
 .noeud{
     margin: 10px auto 10px auto;
@@ -72,3 +81,4 @@ h2{
     height: 6vh;
     animation: progress 1s linear;
 }
+
