@@ -19,13 +19,13 @@
                 <div class="ms-menu-type" id="startersContent">
                 <p class="ms-dish-label">Mousse de truite gravlax, betterave fumée et pickles de graines de moutarde</p>
                 <p class="ms-dish-price">11 €</p>
-                <p class="ms-dish-transition">____</p>
+                <img class="ms-dish-transition" src="../Assets/Images/noeud.png" alt="noeud">
                 <p class="ms-dish-label">Soupe de poisson, croutons au sarrasin, ail, persillade et citron caviar</p>
                 <p class="ms-dish-price">8 €</p>
-                <p class="ms-dish-transition">____</p>
+                    <img class="ms-dish-transition" src="../Assets/Images/noeud.png" alt="noeud">
                 <p class="ms-dish-label">Assiette de coquillages et son assortiment de sauces maison</p>
                 <p class="ms-dish-price">14 €</p>
-                <p class="ms-dish-transition">____</p>
+                    <img class="ms-dish-transition" src="../Assets/Images/noeud.png" alt="noeud">
                 <p class="ms-dish-label">Aumonière au saumon et poireau, toasts croustillants au chèvre frais</p>
                 <p class="ms-dish-price">8 €</p>
             </div>
@@ -33,28 +33,28 @@
                 <p class="ms-dish-label">Filet de brochet sauce yuzu, confit de tomates à la provençale, pickles
                     d'oignons grillés</p>
                 <p class="ms-dish-price">21 €</p>
-                <p class="ms-dish-transition">____</p>
+                    <img class="ms-dish-transition" src="../Assets/Images/noeud.png" alt="noeud">
                 <p class="ms-dish-label">Millefeuilles d'écrevisses et d'anguille fumée, sauce cognac, pommes vertes et
                     wasabi</p>
                 <p class="ms-dish-price">24 €</p>
-                <p class="ms-dish-transition">____</p>
+                    <img class="ms-dish-transition" src="../Assets/Images/noeud.png" alt="noeud">
                 <p class="ms-dish-label">Truite farcie en robe de courgette, beurre blanc, mousseline de panais et
                     pousses d'épinards</p>
                 <p class="ms-dish-price">23 €</p>
-                <p class="ms-dish-transition">____</p>
+                    <img class="ms-dish-transition" src="../Assets/Images/noeud.png" alt="noeud">
                 <p class="ms-dish-label">Ceviche de bar de ligne sablé au parmesan et poêlée de légumes printaniers à l'huile d'olive</p>
                 <p class="ms-dish-price">23 €</p>
             </div>
                 <div class="ms-menu-type" id="dessertsContent">
                 <p class="ms-dish-label">Sélection de fromages du chef</p>
                 <p class="ms-dish-price">10 €</p>
-                <p class="ms-dish-transition">____</p>
+                    <img class="ms-dish-transition" src="../Assets/Images/noeud.png" alt="noeud">
                 <p class="ms-dish-label">Fraîcheur de fruits rouges au sureau, glace basilic et copeaux de chocolat noir</p>
                 <p class="ms-dish-price">9 €</p>
-                <p class="ms-dish-transition">____</p>
+                    <img class="ms-dish-transition" src="../Assets/Images/noeud.png" alt="noeud">
                 <p class="ms-dish-label">Sablé breton, crémeux gingembre et éclats de meringue aromatisée au citron vert</p>
                 <p class="ms-dish-price">8 €</p>
-                <p class="ms-dish-transition">____</p>
+                    <img class="ms-dish-transition" src="../Assets/Images/noeud.png" alt="noeud">
                 <p class="ms-dish-label">Sphère aux trois chocolats, espuma de crème anglaise et amandes concassées</p>
                 <p class="ms-dish-price">10 €</p>
             </div>
@@ -70,26 +70,6 @@
 </section>
 
 <script>
-    /*
-    function openSection(section, element, color) {
-        // Hide all elements ms-menu-type by default
-        let i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("ms-menu-type");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display= "none";
-        }
-        // Remove background color of all tablinks
-        tablinks = document.getElementsByClassName("ms-nav-menu-link");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-        }
-        // Display the selected menu section
-        document.getElementById(section).style.display = "block";
-        element.style.backgroundColor = color;
-        // Start with default element
-        document.getElementById("defaultOpen").click();
-    }
-    */
 
     // Defining all my variables
     let i = 1;
@@ -99,6 +79,7 @@
     let startersContent = document.querySelector("#startersContent");
     let mainsContent = document.querySelector("#mainsContent");
     let dessertsContent = document.querySelector("#dessertsContent");
+
 
     // Defining style when user clicks on "Entrées"
     function openStarters() {
