@@ -6,7 +6,9 @@
     transform-style: preserve-3d;
 }
 
-
+input[type=radio] {
+    display: none;
+}
 
 .ms-carousel-photos {
     position: relative;
@@ -14,16 +16,6 @@
     height: 100%;
     margin-bottom: 20px;
 
-}
-
-label img {
-    border-radius: 10px;
-    object-fit: cover;
-    height: 100%;
-}
-
-.ms-carousel-photos img{
-    width: 100%;
 }
 
 .ms-carousel-photo {
@@ -37,12 +29,20 @@ label img {
     cursor: pointer;
 }
 
-input[type=radio] {
-    display: none;
+label img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+}
+
+.ms-carousel-photos img{
+    width: 100%;
 }
 
 /*
-Carousel 6 photos dégueulasse
+Carousel 6 pictures,
+They form a loop, 1 2 3 4 5 6 1 2 3 4 5 6....
+When photo 1 is checked (since they are radio inputs), the next photo (n°2) is 40% on its right (translateX(40%)), has less opacity and 80* of its size; same with photo before (n°6) but this time 40% on its left (translateX(-40%)
  */
 
 #photo-1:checked ~ .ms-carousel-photos #meal-6, #photo-2:checked ~ .ms-carousel-photos #meal-1, #photo-3:checked ~ .ms-carousel-photos #meal-2, #photo-4:checked ~ .ms-carousel-photos #meal-3, #photo-5:checked ~ .ms-carousel-photos #meal-4, #photo-6:checked ~ .ms-carousel-photos #meal-5 {
