@@ -17,7 +17,7 @@
         <input type="text" class="ms-name" name="ms-name" placeholder="Nom ou société *" required>
         <input type="tel" class="ms-phone" name="ms-phone" placeholder="Téléphone *" required>
         <input type="email" class="ms-mail" name="ms-mail" placeholder="E-mail">
-        <input type="number" class="ms-plates" name="ms-plates" placeholder="Nombre de couverts *" required>
+        <input type="number" class="ms-plates" name="ms-plates" placeholder="Nombre de couverts *" min="1" max="15" required>
         <input type="date" class="ms-date" name="ms-date" value="<?= date("Y-m-d");?>" min="<?= date("Y-m-d");?>" required>
         <input type="time" class="ms-hour" name="ms-hour" value="<?php date_default_timezone_set('Europe/Paris'); echo date("H:i");?>" list="hoursList" required>
 

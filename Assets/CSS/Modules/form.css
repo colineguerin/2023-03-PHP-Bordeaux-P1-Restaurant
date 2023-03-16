@@ -22,6 +22,10 @@ form {
     gap: 0.625rem;
 }
 
+@media screen and (max-width: 400px) {
+    form {}
+}
+
 /*
 --- Inputs and textarea styles ---
  */
