@@ -1,15 +1,52 @@
+/*
+Defining the section .ms-form as grid and placing it in the center of the page
+ */
+
 .ms-booking {
     display: grid;
     justify-content: center;
     text-align: center;
 }
 
+/*
+Definig the form itself as a grid
+ */
+
 form {
     width: 50vw;
     display: grid;
+    /* No need to define the grid template apparently
     grid-template: repeat(5, 1fr) / repeat(2, 1fr);
     grid-template-rows: repeat(3, 65px) 1fr 1fr;
-    gap: 10px;
+     */
+    gap: 0.625rem;
+}
+
+/*
+--- Inputs and textarea styles ---
+ */
+
+input {
+    height: 9vh;
+}
+/*
+textarea spans on a full row + resize disabled
+ */
+textarea {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    resize: none;
+}
+
+/*
+Common styles for input and textarea
+ */
+
+/*
+On click, inputs and textarea have no outline
+ */
+input:focus, textarea:focus {
+    outline:none;
 }
 
 input, textarea {
@@ -19,21 +56,9 @@ input, textarea {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-input {
-    height: 9vh;
-}
-
-input:read-write, textarea:read-write{
-    padding: 0.625rem;
-}
-
-input:focus::placeholder, textarea:focus::placeholder {
-    opacity: 0.2;
-}
-
-input:focus {
-    outline:none;
-}
+/*
+Defining the font for placeholders
+ */
 
 ::-webkit-input-placeholder, input, textarea {
     font-size: 1.5rem;
@@ -41,11 +66,26 @@ input:focus {
     color: var(--main-text-color);
 }
 
-textarea {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    resize: none;
+/*
+:read-write allows to target what is readable and "writable" by users including placeholders and values of input date and time, giving it a padding
+ */
+
+input:read-write, textarea:read-write{
+    padding: 0.625rem;
 }
+
+/*
+On click placeholders have low opacity
+ */
+
+input:focus::placeholder, textarea:focus::placeholder {
+    opacity: 0.2;
+}
+
+
+/*
+--- Input submit style ---
+ */
 
 .ms-button {
     grid-column-start: 1;
