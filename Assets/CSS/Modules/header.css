@@ -1,6 +1,26 @@
-nav{
+*{
+    color: #102839;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans MT";
+    text-decoration: none;
+}
+
+.navigation-globale{
     width: 100vw;
+    height: 15vh;
     display: flex;
+    justify-content: space-between;
+    background-color: #FDFFF5;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    position: fixed;
+    top: 0;
+}
+
+.logo{
+    height: 17vh;
+    margin: 0.5% auto auto 0.5%;
 }
 
 ul{
@@ -8,4 +28,47 @@ ul{
     display: flex;
     flex-direction: row;
     list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li{
+    font-size: 1.5em;
+}
+
+.accueil{
+    background-image: url("../Assets/Images/trieste-g46457e002_1920.jpg");
+    height: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 15vh;
+}
+
+h1{
+    margin: 4% 4% 0 auto;
+    font-size: 3em;
+}
+
+h2{
+    margin: 0 4% auto auto;
+    font-family: Calibri;
+    font-size: 1em;
+}
+
+
+
+.noeud{
+    margin: 10px auto 10px auto;
+    display: flex;
+    height: 7vh;
+}
+
+.bateau{
+    position: absolute;
+    top: 10vh;
+    left: 12vw;
+    height: 6vh;
+    animation: progress 1s linear;
 }
