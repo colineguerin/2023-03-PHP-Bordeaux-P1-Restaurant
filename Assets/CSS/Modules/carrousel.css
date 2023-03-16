@@ -126,6 +126,11 @@ Not displaying too many photos on phones, when photo 1 is in front, photos 3, 4,
     #photo-6:checked ~ .ms-carousel-photos #meal-2, #photo-6:checked ~ .ms-carousel-photos #meal-3, #photo-6:checked ~ .ms-carousel-photos #meal-4 {
         visibility: hidden;
     }
+
+    .ms-carousel{
+        height: 40vh;
+    }
+
 }
 
 
