@@ -1,9 +1,6 @@
-.ms-footer {
-    background-color: var(--dark-color);
-    
-}
-
-.ms-footer-text {
+.ms-footer-banner {
+    background-color: white;
     color: var(--secondary-title-color);
-    background-color: #red;
+    font-family: "Advent Pro";
+    font-size: 32px;
 }
