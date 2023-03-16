@@ -3,8 +3,7 @@
     <h2 class="ms-contact-title"><span class="ms-h2-small">Où </span><span class="ms-h2-big">Nous trouver ?</span></h2>
     <div class="ms-map-infos">
         <div id="googleMap" class="w-50">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d470.8030490673716!2d-0.5656859361141737!3d44.86943739173772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1678890384487!5m2!1sfr!2sfr" width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.8507773020847!2d-0.5628195500087013!3d44.86942029689553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5529bf338112db%3A0x191d08aaaaada807!2sBateau!5e0!3m2!1sfr!2sfr!4v1678960001641!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
         <div class="ms-contact-infos w-50">
             <h5>Mille Sabords</h5>
             <p class="ms-infos-text">35 rue du restaurant<br>
