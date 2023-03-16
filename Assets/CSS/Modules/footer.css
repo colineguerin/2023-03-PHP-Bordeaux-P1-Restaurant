@@ -13,4 +13,8 @@ footer a {
     color: var(--secondary-title-color);
 }
 
-
+@media screen and (max-width: 400px) {
+    .ms-footer-banner {
+        font-size: 12px;
+    }
+}

@@ -63,3 +63,16 @@ h2 + * {
     margin-top: 3vh;
 }
 
+@media screen and (max-width: 400px) {
+    .ms-h2-small {
+        font-size: 1.5rem;
+    }
+    .ms-h2-big {
+        font-size: 2rem;
+    }
+
+    section {
+        margin-bottom: 5vh;
+    }
+
+}
