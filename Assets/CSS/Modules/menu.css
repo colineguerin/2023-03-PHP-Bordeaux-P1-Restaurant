@@ -13,7 +13,6 @@
 }
 
 /* Clickable items "entrées", "plats", "desserts" */
-
 .ms-menu-list {
     list-style: none;
     padding-left: 0;
@@ -45,21 +44,28 @@
     margin-right: 4px;
 }
 
+.ms-menu-items:hover {
+    background-color: #091923;
+}
+
 /* Setting displayed item by default to "Entrées" */
 #startersItem {
     background-color: var(--main-text-color);
     color: var(--dark-color);
     height: 72px;
-    paddingTop: 16px;
+    padding-top: 16px;
 }
 
-.ms-menu-items:hover {
-    background-color: #091923;
+#startersContent {
+    display: block;
+}
+
+#mainsContent, #dessertsContent {
+    display: none;
 }
 
 
 /* Menu content with list of dishes */
-
 .ms-menu-content {
     font-family: var(--secondary-font);
     max-width: 650px;
@@ -67,36 +73,31 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: 48px;
+    padding: 48px 24px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-}
-
-#mainsContent, #dessertsContent {
-    display: none;
 }
 
 .ms-dish-label, .ms-dish-price, .ms-dish-transition {
     color: var(--dark-color);
     text-align: center;
+    padding-top: 8px;
 }
 
 .ms-dish-label {
-    padding-top: 16px;
     font-size: 20px;
 }
 
 .ms-dish-price {
-    padding-top: 8px;
     font-size: 16px;
 }
 
-/* Arrow previous and next buttons */
-
-.ms-previous-button-wrapper {
-
+.ms-dish-transition {
+    width: 20%;
+    height: auto;
 }
 
+/* Arrow previous and next buttons */
 #previousButton {
     width: 32px;
     height: 48px;
