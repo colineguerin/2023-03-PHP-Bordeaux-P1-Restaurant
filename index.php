@@ -10,7 +10,7 @@ include "_includes/header.php";
 include "_includes/cards.php";
 
 //fichier php du carrousel des photos de cuisine
-include "_includes/carrousel.php";
+//include "_includes/carrousel.php";
 
 //fichier php du carrousel du menu
 include "_includes/menu.php";

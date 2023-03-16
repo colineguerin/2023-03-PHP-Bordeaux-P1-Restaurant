@@ -1,20 +1,92 @@
 .ms-carousel {
-    width: 50vw;
-    margin: auto;
+    max-width: 800px;
+    max-height: 600px;
+    height: 100%;
+    transform-style: preserve-3d;
 }
 
+
+
 .ms-carousel-photos {
-    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+
+}
+
+label img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
 }
 
 .ms-carousel-photos img{
-    width: 10vw;
+    width: 100%;
 }
 
 .ms-carousel-photo {
-
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
 }
 
 input[type=radio] {
     display: none;
+}
+
+/*
+Carousel 6 photos dégueulasse
+ */
+
+#photo-1:checked ~ .ms-carousel-photos #meal-6, #photo-2:checked ~ .ms-carousel-photos #meal-1, #photo-3:checked ~ .ms-carousel-photos #meal-2, #photo-4:checked ~ .ms-carousel-photos #meal-3, #photo-5:checked ~ .ms-carousel-photos #meal-4, #photo-6:checked ~ .ms-carousel-photos #meal-5 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#photo-1:checked ~ .ms-carousel-photos #meal-2, #photo-2:checked ~ .ms-carousel-photos #meal-3, #photo-3:checked ~ .ms-carousel-photos #meal-4, #photo-4:checked ~ .ms-carousel-photos #meal-5, #photo-5:checked ~ .ms-carousel-photos #meal-6, #photo-6:checked ~ .ms-carousel-photos #meal-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#photo-1:checked ~ .ms-carousel-photos #meal-1, #photo-2:checked ~ .ms-carousel-photos #meal-2, #photo-3:checked ~ .ms-carousel-photos #meal-3, #photo-4:checked ~ .ms-carousel-photos #meal-4, #photo-5:checked ~ .ms-carousel-photos #meal-5, #photo-6:checked ~ .ms-carousel-photos #meal-6{
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+
+}
+
+/*
+Not displaying too many photos, when photo 1 is in front, photos 3, 4, 5 aren't shown, etc...
+ */
+
+#photo-1:checked ~.ms-carousel-photos #meal-3, #photo-1:checked ~.ms-carousel-photos #meal-4, #photo-1:checked ~.ms-carousel-photos #meal-5 {
+    visibility: hidden;
+}
+
+#photo-2:checked ~.ms-carousel-photos #meal-4, #photo-2:checked ~.ms-carousel-photos #meal-5, #photo-2:checked ~.ms-carousel-photos #meal-5 {
+    visibility: hidden;
+}
+
+#photo-3:checked ~.ms-carousel-photos #meal-5, #photo-3:checked ~.ms-carousel-photos #meal-6, #photo-3:checked ~.ms-carousel-photos #meal-1 {
+    visibility: hidden;
+}
+
+#photo-4:checked ~.ms-carousel-photos #meal-6, #photo-4:checked ~.ms-carousel-photos #meal-1, #photo-4:checked ~.ms-carousel-photos #meal-2 {
+    visibility: hidden;
+}
+
+#photo-5:checked ~.ms-carousel-photos #meal-1, #photo-5:checked ~.ms-carousel-photos #meal-2, #photo-5:checked ~.ms-carousel-photos #meal-3 {
+    visibility: hidden;
+}
+
+#photo-6:checked ~.ms-carousel-photos #meal-2, #photo-6:checked ~.ms-carousel-photos #meal-3, #photo-6:checked ~.ms-carousel-photos #meal-4 {
+    visibility: hidden;
 }
