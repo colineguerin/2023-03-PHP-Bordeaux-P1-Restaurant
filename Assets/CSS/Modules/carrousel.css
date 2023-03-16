@@ -1,7 +1,8 @@
 .ms-carousel {
-    max-width: 800px;
-    max-height: 600px;
-    height: 100%;
+    display: grid;
+    margin: 15vh auto;
+    height: 70vh;
+    max-width: 80vw;
     transform-style: preserve-3d;
 }
 
@@ -71,7 +72,7 @@ Not displaying too many photos, when photo 1 is in front, photos 3, 4, 5 aren't 
     visibility: hidden;
 }
 
-#photo-2:checked ~.ms-carousel-photos #meal-4, #photo-2:checked ~.ms-carousel-photos #meal-5, #photo-2:checked ~.ms-carousel-photos #meal-5 {
+#photo-2:checked ~.ms-carousel-photos #meal-4, #photo-2:checked ~.ms-carousel-photos #meal-5, #photo-2:checked ~.ms-carousel-photos #meal-6 {
     visibility: hidden;
 }
 
