@@ -1,0 +1,9 @@
+.ms-footer {
+    background-color: var(--dark-color);
+    
+}
+
+.ms-footer-text {
+    color: var(--secondary-title-color);
+    background-color: #red;
+}
