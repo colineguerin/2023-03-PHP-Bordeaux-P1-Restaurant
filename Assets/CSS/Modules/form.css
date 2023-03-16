@@ -8,23 +8,24 @@ Defining the section .ms-form as grid and placing it in the center of the page
     text-align: center;
 }
 
+.ms-title-section {
+    margin: auto;
+}
+
 /*
 Definig the form itself as a grid
  */
 
 form {
-    width: 50vw;
     display: grid;
-    /* No need to define the grid template apparently
-    grid-template: repeat(5, 1fr) / repeat(2, 1fr);
-    grid-template-rows: repeat(3, 65px) 1fr 1fr;
+    /* No need to define the grid template apparently*/
+    grid-template: repeat(3, 9vh) 22vh 10vh / repeat(2, 1fr);
+    /*grid-template-rows: repeat(3, 65px) 1fr 1fr;
      */
     gap: 0.625rem;
 }
 
-@media screen and (max-width: 400px) {
-    form {}
-}
+
 
 /*
 --- Inputs and textarea styles ---
@@ -98,4 +99,40 @@ input:focus::placeholder, textarea:focus::placeholder {
     height: 7vh;
     margin: 1.25rem auto;
     background-color: var(--dark-color);
+}
+
+
+@media screen and (max-width: 400px) {
+    .ms-booking {
+        width: 50vw;
+        margin: 15vh auto;
+    }
+
+    form {
+        grid-template: repeat(6, 7vh) / 1fr;
+    }
+
+    input {
+        height: 7vh;
+    }
+
+    .ms-plates, .ms-date, .ms-hour {
+
+    }
+
+    textarea {
+        grid-column-start: initial;
+        grid-column-end: initial;
+    }
+
+    ::-webkit-input-placeholder, input, textarea {
+        font-size: 1.25rem;
+    }
+
+    .ms-button {
+        grid-column-end: initial;
+        width: initial;
+        padding: 2vw;
+    }
+
 }
