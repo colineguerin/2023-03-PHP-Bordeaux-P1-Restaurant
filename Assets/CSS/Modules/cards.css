@@ -1,18 +1,32 @@
 .ms-cards {
-    background-color: #102839;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid:
+    "theConcept image-card1" 1fr
+    "image-card2 theFood" 1fr
+    / 1fr 1fr;
+    height: auto;
 }
 
 .ms-image-card1, .ms-image-card2{
     width: 50vw;
     height: auto;
 }
+.ms-card1 {
+    grid-area: theConcept;
+}
+.ms-card2 {
+    grid-area: theFood;
+}
+.ms-image-card1{
+    grid-area: image-card1;
+}
+
+.ms-image-card2{
+    grid-area: image-card2;
+}
 
 .ms-theConcept, .ms-theFood {
+    background-color: var(--dark-color);
     width: 100%;
     height: 20%;
     text-align: center;
@@ -22,6 +36,7 @@
 }
 
 p.ms-foodText, p.ms-conceptText {
+    background-color: var(--dark-color);
     color: var(--main-text-color);
     height: 80%;
     display: flex;
@@ -46,6 +61,28 @@ p.ms-foodText, p.ms-conceptText {
     font-style: normal;
 }
 
+@media screen and (max-width: 400px) {
 
+    p.ms-foodText, p.ms-conceptText {
+        display: flex;
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+        align-items: center;
+        font-family: Hanuman;
+        padding: 5%;
+
+    }
+
+    .ms-cards {
+        display: inline-block;
+    }
+
+    .ms-image-card1, .ms-image-card2{
+        width: 100vw;
+        height: auto;
+        display: block;
+    }
+}
 
 

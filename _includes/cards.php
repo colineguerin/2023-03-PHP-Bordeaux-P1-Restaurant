@@ -9,7 +9,6 @@
     </div>
     <img class="ms-image-card1"  src="../assets/Images/concept1.png" alt="chef">
 
-    <img class="ms-image-card2" src="../assets/Images/cuisine1.png" alt="cuisine">
         <div class="ms-card2">
         <h3 class="ms-theFood"><span class="ms-h2-small-card">La </span> <span class="ms-h2-big-card">Cuisine</span></h3>
         <p class="ms-foodText">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -17,6 +16,7 @@
 
             Ut sed arcu non elit vestibulum commodo in in eros. Etiam posuere, lectus eu rhoncus efficitur, velit nisl tempus purus, in pretium neque nisi vitae tortor. Quisque ut accumsan dolor.</p>
     </div>
+    <img class="ms-image-card2" src="../assets/Images/cuisine1.png" alt="cuisine">
 
 </section>
 
