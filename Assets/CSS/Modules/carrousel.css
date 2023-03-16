@@ -42,21 +42,55 @@ label img {
 /*
 Carousel 6 pictures,
 They form a loop, 1 2 3 4 5 6 1 2 3 4 5 6....
-When photo 1 is checked (since they are radio inputs), the next photo (n°2) is 40% on its right (translateX(40%)), has less opacity and 80* of its size; same with photo before (n°6) but this time 40% on its left (translateX(-40%)
+When photo 1 is checked (since they are radio inputs), the next photo (n°2) is 40% on its right (translateX(40%)), has less opacity and 80* of its size; same with photo before (n°6) but this time 40% on its left (translateX(-40%). They are 3 photos displayed at the same time
  */
-
+/*
+Photos to the left
+ */
 #photo-1:checked ~ .ms-carousel-photos #meal-6, #photo-2:checked ~ .ms-carousel-photos #meal-1, #photo-3:checked ~ .ms-carousel-photos #meal-2, #photo-4:checked ~ .ms-carousel-photos #meal-3, #photo-5:checked ~ .ms-carousel-photos #meal-4, #photo-6:checked ~ .ms-carousel-photos #meal-5 {
     transform: translatex(-40%) scale(.8);
     opacity: .4;
     z-index: 0;
 }
 
+/*
+Photos to the right
+ */
 #photo-1:checked ~ .ms-carousel-photos #meal-2, #photo-2:checked ~ .ms-carousel-photos #meal-3, #photo-3:checked ~ .ms-carousel-photos #meal-4, #photo-4:checked ~ .ms-carousel-photos #meal-5, #photo-5:checked ~ .ms-carousel-photos #meal-6, #photo-6:checked ~ .ms-carousel-photos #meal-1 {
     transform: translatex(40%) scale(.8);
     opacity: .4;
     z-index: 0;
 }
 
+/* WORK IN PROGRESS TO DISPLAY MORE PHOTOS
+Only on Desktops
+*/
+
+@media screen and (min-width: 401px) {
+
+
+    /*
+    More photos to the left
+     */
+    #photo-1:checked ~ .ms-carousel-photos #meal-5, #photo-2:checked ~ .ms-carousel-photos #meal-6, #photo-3:checked ~ .ms-carousel-photos #meal-1, #photo-4:checked ~ .ms-carousel-photos #meal-2, #photo-5:checked ~ .ms-carousel-photos #meal-3, #photo-6:checked ~ .ms-carousel-photos #meal-4 {
+        transform: translatex(-60%) scale(.6);
+        opacity: .2;
+        z-index: -1;
+    }
+
+    /*
+    More photos to the right
+     */
+    #photo-1:checked ~ .ms-carousel-photos #meal-3, #photo-2:checked ~ .ms-carousel-photos #meal-4, #photo-3:checked ~ .ms-carousel-photos #meal-5, #photo-4:checked ~ .ms-carousel-photos #meal-6, #photo-5:checked ~ .ms-carousel-photos #meal-1, #photo-6:checked ~ .ms-carousel-photos #meal-2 {
+        transform: translatex(60%) scale(.6);
+        opacity: .2;
+        z-index: -1;
+    }
+}
+
+/*
+Displaying the photo n°1 when input radio 1 is checked
+ */
 #photo-1:checked ~ .ms-carousel-photos #meal-1, #photo-2:checked ~ .ms-carousel-photos #meal-2, #photo-3:checked ~ .ms-carousel-photos #meal-3, #photo-4:checked ~ .ms-carousel-photos #meal-4, #photo-5:checked ~ .ms-carousel-photos #meal-5, #photo-6:checked ~ .ms-carousel-photos #meal-6{
     transform: translatex(0) scale(1);
     opacity: 1;
@@ -65,29 +99,58 @@ When photo 1 is checked (since they are radio inputs), the next photo (n°2) is 
 }
 
 /*
-Not displaying too many photos, when photo 1 is in front, photos 3, 4, 5 aren't shown, etc...
+Not displaying too many photos on phones, when photo 1 is in front, photos 3, 4, 5 aren't shown, etc...
  */
+@media screen and (max-width: 400px) {
 
-#photo-1:checked ~.ms-carousel-photos #meal-3, #photo-1:checked ~.ms-carousel-photos #meal-4, #photo-1:checked ~.ms-carousel-photos #meal-5 {
-    visibility: hidden;
+    #photo-1:checked ~ .ms-carousel-photos #meal-3, #photo-1:checked ~ .ms-carousel-photos #meal-4, #photo-1:checked ~ .ms-carousel-photos #meal-5 {
+        visibility: hidden;
+    }
+
+    #photo-2:checked ~ .ms-carousel-photos #meal-4, #photo-2:checked ~ .ms-carousel-photos #meal-5, #photo-2:checked ~ .ms-carousel-photos #meal-6 {
+        visibility: hidden;
+    }
+
+    #photo-3:checked ~ .ms-carousel-photos #meal-5, #photo-3:checked ~ .ms-carousel-photos #meal-6, #photo-3:checked ~ .ms-carousel-photos #meal-1 {
+        visibility: hidden;
+    }
+
+    #photo-4:checked ~ .ms-carousel-photos #meal-6, #photo-4:checked ~ .ms-carousel-photos #meal-1, #photo-4:checked ~ .ms-carousel-photos #meal-2 {
+        visibility: hidden;
+    }
+
+    #photo-5:checked ~ .ms-carousel-photos #meal-1, #photo-5:checked ~ .ms-carousel-photos #meal-2, #photo-5:checked ~ .ms-carousel-photos #meal-3 {
+        visibility: hidden;
+    }
+
+    #photo-6:checked ~ .ms-carousel-photos #meal-2, #photo-6:checked ~ .ms-carousel-photos #meal-3, #photo-6:checked ~ .ms-carousel-photos #meal-4 {
+        visibility: hidden;
+    }
 }
 
-#photo-2:checked ~.ms-carousel-photos #meal-4, #photo-2:checked ~.ms-carousel-photos #meal-5, #photo-2:checked ~.ms-carousel-photos #meal-6 {
-    visibility: hidden;
+
+
+#photo-1:checked ~ .ms-carousel-photos #meal-4 {
+        visibility: hidden;
 }
 
-#photo-3:checked ~.ms-carousel-photos #meal-5, #photo-3:checked ~.ms-carousel-photos #meal-6, #photo-3:checked ~.ms-carousel-photos #meal-1 {
-    visibility: hidden;
+#photo-2:checked ~ .ms-carousel-photos #meal-5 {
+        visibility: hidden;
 }
 
-#photo-4:checked ~.ms-carousel-photos #meal-6, #photo-4:checked ~.ms-carousel-photos #meal-1, #photo-4:checked ~.ms-carousel-photos #meal-2 {
-    visibility: hidden;
+#photo-3:checked ~ .ms-carousel-photos #meal-6 {
+        visibility: hidden;
 }
 
-#photo-5:checked ~.ms-carousel-photos #meal-1, #photo-5:checked ~.ms-carousel-photos #meal-2, #photo-5:checked ~.ms-carousel-photos #meal-3 {
-    visibility: hidden;
+#photo-4:checked ~ .ms-carousel-photos #meal-1 {
+        visibility: hidden;
 }
 
-#photo-6:checked ~.ms-carousel-photos #meal-2, #photo-6:checked ~.ms-carousel-photos #meal-3, #photo-6:checked ~.ms-carousel-photos #meal-4 {
-    visibility: hidden;
+#photo-5:checked ~ .ms-carousel-photos #meal-2 {
+        visibility: hidden;
 }
+
+#photo-6:checked ~ .ms-carousel-photos #meal-3 {
+        visibility: hidden;
+}
+
