@@ -13,14 +13,14 @@
             12h-14h30 et 19h-21h30</p>
             <p class="ms-infos-text">05.57.05.05.57<br>
             millesabords@wanadoo.fr</p>
-        </div>
+
         <img class="ms-place-png" src="../Assets/Images/adresse%201.png" alt="adresse">
         <img class="ms-facebook-png" src="../Assets/Images/facebook.png" alt="facebook">
         <img class="ms-clock-png" src="../Assets/Images/horloge.png" alt="horloge">
         <img class="ms-insta-png" src="../Assets/Images/insta.png" alt="instagram">
         <img class="ms-telephone-png" src="../Assets/Images/telephone.png" alt="telephone">
         <img class="ms-tripadvisor-png" src="../Assets/Images/tripadvisor.png" alt="tripadvisor">
-
+    </div>
 
     </div>
 

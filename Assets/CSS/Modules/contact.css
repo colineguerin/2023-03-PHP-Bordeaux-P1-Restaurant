@@ -40,6 +40,7 @@ h5 {
 
 .ms-contact-infos {
     text-align: center;
+    position: relative;
 }
 
 .ms-infos-text {
@@ -51,44 +52,45 @@ h5 {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 360%;
-    left: 60%;
+    top: 12%;
+    left: 10%;
 }
 .ms-clock-png {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 375%;
-    left: 60%;
+    top: 27%;
+    left: 10%;
 }
 .ms-telephone-png {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 390%;
-    left: 60%;
+    top: 46%;
+    left: 10%;
 }
 .ms-facebook-png {
     height: 64px;
     width: 64px;
     position: absolute;
-    top: 405%;
-    left: 55%;
+    top: 65%;
+    left: 20%;
 }
 .ms-insta-png {
     height: 64px;
     width: 64px;
     position: absolute;
-    top: 405%;
-    left: 70%;
+    top: 65%;
+    left: 45%;
 }
 .ms-tripadvisor-png {
     height: 64px;
     width: 64px;
     position: absolute;
-    top: 405%;
-    left: 85%;
+    top: 65%;
+    left: 70%;
 }
+
 
 
 
