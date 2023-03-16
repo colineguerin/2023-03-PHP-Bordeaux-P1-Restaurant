@@ -1,10 +1,14 @@
 .ms-menu {
-    margin-top: 24px;
+    margin-bottom: 0;
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
 
-.ms-title-menu-section {
-    display: flex;
-    justify-content: center;
+.ms-menu-wrapper {
+    width: 100vw;
+    display: inline-flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -15,8 +19,9 @@
     padding-left: 0;
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
@@ -25,15 +30,27 @@
     color: var(--main-text-color);
     font-size: 32px;
     font-family: var(--title-font);
+    font-weight: 600;
     text-align: center;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    margin-right: 8px;
     width: 100%;
     height: 56px;
     padding-top: 8px;
     padding-bottom: 8px;
     cursor: pointer;
+}
+
+#startersItem, #mainsItem {
+    margin-right: 4px;
+}
+
+/* Setting displayed item by default to "Entrées" */
+#startersItem {
+    background-color: var(--main-text-color);
+    color: var(--dark-color);
+    height: 72px;
+    paddingTop: 16px;
 }
 
 .ms-menu-items:hover {
@@ -45,12 +62,18 @@
 
 .ms-menu-content {
     font-family: var(--secondary-font);
-    max-width: 600px;
+    max-width: 650px;
     background-color: var(--main-text-color);
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: 24px;
+    padding: 48px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#mainsContent, #dessertsContent {
+    display: none;
 }
 
 .ms-dish-label, .ms-dish-price, .ms-dish-transition {
@@ -60,7 +83,7 @@
 
 .ms-dish-label {
     padding-top: 16px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .ms-dish-price {
@@ -68,7 +91,39 @@
     font-size: 16px;
 }
 
+/* Arrow previous and next buttons */
+
+.ms-previous-button-wrapper {
+
+}
+
+#previousButton {
+    width: 32px;
+    height: 48px;
+    background-color: var(--main-text-color);
+    clip-path: polygon(50% 0, 0 50%, 50% 100%, 100% 100%, 50% 50%, 100% 0);
+    cursor: pointer;
+    border: 0;
+}
+
+#nextButton {
+    width: 32px;
+    height: 48px;
+    background-color: var(--main-text-color);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 100%, 50% 50%, 0 0);
+    cursor: pointer;
+    border: 0;
+}
+
+/* Transition before next section */
 .ms-menu-below {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 15vh;
 }
+
+.ms-knot-transition {
+    height: 7vh;
+}
+
