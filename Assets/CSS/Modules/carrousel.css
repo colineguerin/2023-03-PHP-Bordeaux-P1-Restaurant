@@ -89,7 +89,7 @@ Only on Desktops
 }
 
 /*
-Displaying the photo n°1 when input radio 1 is checked
+Displaying the photo n°1 when input radio 1 is checked and so on
  */
 #photo-1:checked ~ .ms-carousel-photos #meal-1, #photo-2:checked ~ .ms-carousel-photos #meal-2, #photo-3:checked ~ .ms-carousel-photos #meal-3, #photo-4:checked ~ .ms-carousel-photos #meal-4, #photo-5:checked ~ .ms-carousel-photos #meal-5, #photo-6:checked ~ .ms-carousel-photos #meal-6{
     transform: translatex(0) scale(1);
