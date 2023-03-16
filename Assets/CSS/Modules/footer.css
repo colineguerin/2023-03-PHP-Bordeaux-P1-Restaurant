@@ -1,6 +1,16 @@
 .ms-footer-banner {
-    background-color: white;
+    background-color: var(--dark-color);
     color: var(--secondary-title-color);
     font-family: "Advent Pro";
     font-size: 32px;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
 }
+
+footer a {
+    text-decoration: none;
+    color: var(--secondary-title-color);
+}
+
+
