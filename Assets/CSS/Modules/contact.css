@@ -25,14 +25,14 @@ iframe {
 .ms-contact-infos p{
     height: auto;
     font-family: Hanuman;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--dark-color);
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 h5 {
     font-family: "Advent Pro";
-    font-size: 40px;
+    font-size: 2.5rem;
     color: var(--dark-color);
     font-weight: bold;
 }
@@ -52,21 +52,21 @@ h5 {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 18%;
+    top: 15%;
     left: 7%;
 }
 .ms-clock-png {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 40%;
+    top: 36%;
     left: 7%;
 }
 .ms-telephone-png {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 64%;
+    top: 57%;
     left: 7%;
 }
 .ms-facebook-png {
