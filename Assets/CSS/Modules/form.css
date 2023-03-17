@@ -106,10 +106,18 @@ input:focus::placeholder, textarea:focus::placeholder {
  */
 
 @media screen and (max-width: 400px) {
+
+    /*
+    Defining styles for the section
+     */
     .ms-booking {
         width: 50vw;
         margin: 5vh auto;
     }
+
+    /*
+    Defining a grid area for each input and their spans in the grid
+     */
 
     .ms-name {
         grid-area: name;
@@ -173,7 +181,7 @@ input:focus::placeholder, textarea:focus::placeholder {
         "mail" 7vh
         "plates" "date" "hour" 7vh
         "demands" auto
-        "submit" auto/ calc(50vw/3) calc(50vw/3) calc(50vw/3);
+        "submit" auto/ calc(60vw/3) calc(60vw/3) calc(60vw/3);
     }
 
     input {
@@ -194,6 +202,7 @@ input:focus::placeholder, textarea:focus::placeholder {
         width: initial;
         padding: 2vw;
     }
+
 
 }
 
