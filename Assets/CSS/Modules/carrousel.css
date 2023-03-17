@@ -39,6 +39,10 @@ label img {
     width: 100%;
 }
 
+label {
+    background-color: #FDFFF5;
+}
+
 /*
 Carousel 6 pictures,
 They form a loop, 1 2 3 4 5 6 1 2 3 4 5 6....
@@ -49,7 +53,18 @@ Photos to the left
  */
 #photo-1:checked ~ .ms-carousel-photos #meal-6, #photo-2:checked ~ .ms-carousel-photos #meal-1, #photo-3:checked ~ .ms-carousel-photos #meal-2, #photo-4:checked ~ .ms-carousel-photos #meal-3, #photo-5:checked ~ .ms-carousel-photos #meal-4, #photo-6:checked ~ .ms-carousel-photos #meal-5 {
     transform: translatex(-40%) scale(.8);
-    opacity: .4;
+    /*opacity: .6;*/
+    z-index: 0;
+}
+
+/*
+WIP trying to change opacity only of the picture and not the label
+Photos to the left
+ */
+
+#photo-1:checked ~ .ms-carousel-photos #meal-6>#truite, #photo-2:checked ~ .ms-carousel-photos #meal-1>#plateau, #photo-3:checked ~ .ms-carousel-photos #meal-2>#coquillages, #photo-4:checked ~ .ms-carousel-photos #meal-3>#saumon, #photo-5:checked ~ .ms-carousel-photos #meal-4>#soupe, #photo-6:checked ~ .ms-carousel-photos #meal-5>#canape {
+    /*transform: translatex(-40%) scale(.8);*/
+    opacity: .6;
     z-index: 0;
 }
 
@@ -58,11 +73,22 @@ Photos to the right
  */
 #photo-1:checked ~ .ms-carousel-photos #meal-2, #photo-2:checked ~ .ms-carousel-photos #meal-3, #photo-3:checked ~ .ms-carousel-photos #meal-4, #photo-4:checked ~ .ms-carousel-photos #meal-5, #photo-5:checked ~ .ms-carousel-photos #meal-6, #photo-6:checked ~ .ms-carousel-photos #meal-1 {
     transform: translatex(40%) scale(.8);
-    opacity: .4;
+    /*opacity: .6;*/
     z-index: 0;
 }
 
-/* WORK IN PROGRESS TO DISPLAY MORE PHOTOS
+/*
+WIP trying to change opacity only to pictures and not the label, to avoid seeing the furthest photo
+Photos to the right
+ */
+
+#photo-1:checked ~ .ms-carousel-photos #meal-2>#coquillages, #photo-2:checked ~ .ms-carousel-photos #meal-3>#saumon, #photo-3:checked ~ .ms-carousel-photos #meal-4>#soupe, #photo-4:checked ~ .ms-carousel-photos #meal-5>#canape, #photo-5:checked ~ .ms-carousel-photos #meal-6>#truite, #photo-6:checked ~ .ms-carousel-photos #meal-1>#plateau {
+    /*transform: translatex(40%) scale(.8);*/
+    opacity: .6;
+    z-index: 0;
+}
+
+/* --- DISPLAY MORE PHOTOS ---
 Only on Desktops
 */
 

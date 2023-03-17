@@ -24,13 +24,13 @@
             <img src="/Assets/Images/shellfish-7811872_1920.jpg" alt="Coquillages" id="coquillages">
         </label>
         <label class="ms-carousel-photo" for="photo-3" id="meal-3">
-            <img src="/Assets/Images/salmon-518032_1920.jpg" alt="Saumon braisé">
+            <img src="/Assets/Images/salmon-518032_1920.jpg" alt="Saumon braisé" id="saumon">
         </label>
         <label class="ms-carousel-photo" for="photo-4" id="meal-4">
-            <img src="../Assets/Images/fish-soup-3054627_1920.jpg" alt="Soupe aux moules">
+            <img src="../Assets/Images/fish-soup-3054627_1920.jpg" alt="Soupe aux moules" id="soupe">
         </label>
         <label class="ms-carousel-photo" for="photo-5" id="meal-5">
-            <img src="../Assets/Images/canape-2802_1920.jpg" alt="Canapé fraîcheur">
+            <img src="../Assets/Images/canape-2802_1920.jpg" alt="Canapé fraîcheur" id="canape">
         </label>
         <label class="ms-carousel-photo" for="photo-6" id="meal-6">
             <img src="../Assets/Images/fish-2105233_1920.jpg" alt="Truite aux 100 herbes" id="truite">
