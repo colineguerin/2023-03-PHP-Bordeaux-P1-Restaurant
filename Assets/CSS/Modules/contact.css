@@ -24,10 +24,10 @@ iframe {
 
 .ms-contact-infos p{
     height: auto;
-    font-family: Hanuman;
+    font-family: var(--secondary-font);
     font-size: 1.5rem;
     color: var(--dark-color);
-    padding-top: 2rem;
+
 }
 
 h5 {
@@ -35,6 +35,8 @@ h5 {
     font-size: 2.5rem;
     color: var(--dark-color);
     font-weight: bold;
+    margin-bottom: 5%;
+    padding-left: 18%;
 }
 
 .ms-contact-infos {
@@ -43,49 +45,49 @@ h5 {
 
 }
 
-.ms-infos-text {
-    padding-top: 16px;
+.ms-group-adress {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding-right: 25%;
+    padding-left: 15%;
+    margin-bottom: 10%;
 }
 
+.ms-group-time {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding-right: 20%;
+    padding-left: 15%;
+    margin-bottom: 10%;
+}
+.ms-group-contact {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding-right: 20%;
+    padding-left: 15%;
+    margin-bottom: 10%;
+}
 
-.ms-place-png {
-    height: 45px;
-    width: 45px;
-    position: absolute;
-    top: 15%;
-    left: 7%;
-}
-.ms-clock-png {
-    height: 45px;
-    width: 45px;
-    position: absolute;
-    top: 36%;
-    left: 7%;
-}
-.ms-telephone-png {
-    height: 45px;
-    width: 45px;
-    position: absolute;
-    top: 57%;
-    left: 7%;
-}
 .ms-facebook-png {
-    height: 64px;
-    width: 64px;
+    height: 55px;
+    width: 55px;
     position: absolute;
     top: 80%;
     left: 20%;
 }
 .ms-insta-png {
-    height: 64px;
-    width: 64px;
+    height: 55px;
+    width: 55px;
     position: absolute;
     top: 80%;
     left: 45%;
 }
 .ms-tripadvisor-png {
-    height: 64px;
-    width: 64px;
+    height: 55px;
+    width: 55px;
     position: absolute;
     top: 80%;
     left: 70%;
