@@ -1,6 +1,5 @@
 .ms-carousel {
     display: grid;
-    margin: 15vh auto;
     height: 70vh;
     max-width: 80vw;
     transform-style: preserve-3d;
@@ -57,16 +56,6 @@ Photos to the left
     z-index: 0;
 }
 
-/*
-WIP trying to change opacity only of the picture and not the label
-Photos to the left
- */
-
-#photo-1:checked ~ .ms-carousel-photos #meal-6>#truite, #photo-2:checked ~ .ms-carousel-photos #meal-1>#plateau, #photo-3:checked ~ .ms-carousel-photos #meal-2>#coquillages, #photo-4:checked ~ .ms-carousel-photos #meal-3>#saumon, #photo-5:checked ~ .ms-carousel-photos #meal-4>#soupe, #photo-6:checked ~ .ms-carousel-photos #meal-5>#canape {
-    /*transform: translatex(-40%) scale(.8);*/
-    opacity: .6;
-    z-index: 0;
-}
 
 /*
 Photos to the right
@@ -77,16 +66,7 @@ Photos to the right
     z-index: 0;
 }
 
-/*
-WIP trying to change opacity only to pictures and not the label, to avoid seeing the furthest photo
-Photos to the right
- */
 
-#photo-1:checked ~ .ms-carousel-photos #meal-2>#coquillages, #photo-2:checked ~ .ms-carousel-photos #meal-3>#saumon, #photo-3:checked ~ .ms-carousel-photos #meal-4>#soupe, #photo-4:checked ~ .ms-carousel-photos #meal-5>#canape, #photo-5:checked ~ .ms-carousel-photos #meal-6>#truite, #photo-6:checked ~ .ms-carousel-photos #meal-1>#plateau {
-    /*transform: translatex(40%) scale(.8);*/
-    opacity: .6;
-    z-index: 0;
-}
 
 /* --- DISPLAY MORE PHOTOS ---
 Only on Desktops
@@ -94,6 +74,9 @@ Only on Desktops
 
 @media screen and (min-width: 401px) {
 
+    .ms-carousel{
+        margin: 15vh auto;
+    }
 
     /*
     More photos to the left
@@ -105,12 +88,34 @@ Only on Desktops
     }
 
     /*
+WIP trying to change opacity only of the picture and not the label
+Photos to the left
+ */
+
+    #photo-1:checked ~ .ms-carousel-photos #meal-6>#truite, #photo-2:checked ~ .ms-carousel-photos #meal-1>#plateau, #photo-3:checked ~ .ms-carousel-photos #meal-2>#coquillages, #photo-4:checked ~ .ms-carousel-photos #meal-3>#saumon, #photo-5:checked ~ .ms-carousel-photos #meal-4>#soupe, #photo-6:checked ~ .ms-carousel-photos #meal-5>#canape {
+        /*transform: translatex(-40%) scale(.8);*/
+        opacity: .6;
+        z-index: 0;
+    }
+
+    /*
     More photos to the right
      */
     #photo-1:checked ~ .ms-carousel-photos #meal-3, #photo-2:checked ~ .ms-carousel-photos #meal-4, #photo-3:checked ~ .ms-carousel-photos #meal-5, #photo-4:checked ~ .ms-carousel-photos #meal-6, #photo-5:checked ~ .ms-carousel-photos #meal-1, #photo-6:checked ~ .ms-carousel-photos #meal-2 {
         transform: translatex(60%) scale(.6);
         opacity: .2;
         z-index: -1;
+    }
+
+    /*
+WIP trying to change opacity only to pictures and not the label, to avoid seeing the furthest photo
+Photos to the right
+ */
+
+    #photo-1:checked ~ .ms-carousel-photos #meal-2>#coquillages, #photo-2:checked ~ .ms-carousel-photos #meal-3>#saumon, #photo-3:checked ~ .ms-carousel-photos #meal-4>#soupe, #photo-4:checked ~ .ms-carousel-photos #meal-5>#canape, #photo-5:checked ~ .ms-carousel-photos #meal-6>#truite, #photo-6:checked ~ .ms-carousel-photos #meal-1>#plateau {
+        /*transform: translatex(40%) scale(.8);*/
+        opacity: .6;
+        z-index: 0;
     }
 }
 
@@ -128,33 +133,12 @@ Displaying the photo n°1 when input radio 1 is checked and so on
 Not displaying too many photos on phones, when photo 1 is in front, photos 3, 4, 5 aren't shown, etc...
  */
 @media screen and (max-width: 400px) {
-
-    #photo-1:checked ~ .ms-carousel-photos #meal-3, #photo-1:checked ~ .ms-carousel-photos #meal-4, #photo-1:checked ~ .ms-carousel-photos #meal-5 {
-        visibility: hidden;
-    }
-
-    #photo-2:checked ~ .ms-carousel-photos #meal-4, #photo-2:checked ~ .ms-carousel-photos #meal-5, #photo-2:checked ~ .ms-carousel-photos #meal-6 {
-        visibility: hidden;
-    }
-
-    #photo-3:checked ~ .ms-carousel-photos #meal-5, #photo-3:checked ~ .ms-carousel-photos #meal-6, #photo-3:checked ~ .ms-carousel-photos #meal-1 {
-        visibility: hidden;
-    }
-
-    #photo-4:checked ~ .ms-carousel-photos #meal-6, #photo-4:checked ~ .ms-carousel-photos #meal-1, #photo-4:checked ~ .ms-carousel-photos #meal-2 {
-        visibility: hidden;
-    }
-
-    #photo-5:checked ~ .ms-carousel-photos #meal-1, #photo-5:checked ~ .ms-carousel-photos #meal-2, #photo-5:checked ~ .ms-carousel-photos #meal-3 {
-        visibility: hidden;
-    }
-
-    #photo-6:checked ~ .ms-carousel-photos #meal-2, #photo-6:checked ~ .ms-carousel-photos #meal-3, #photo-6:checked ~ .ms-carousel-photos #meal-4 {
-        visibility: hidden;
-    }
-
+    /*
+    Defining a reduced height on mobiles and
+     */
     .ms-carousel{
         height: 40vh;
+        margin: auto auto 5vh auto;
     }
 
 }
