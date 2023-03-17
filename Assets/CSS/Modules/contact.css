@@ -10,7 +10,7 @@
 
 .ms-map-infos {
    display: flex;
-    height: 100%;
+    height: 84%;
 }
 
 .w-50 {
@@ -40,6 +40,7 @@ h5 {
 .ms-contact-infos {
     text-align: center;
     position: relative;
+
 }
 
 .ms-infos-text {
@@ -51,43 +52,48 @@ h5 {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 12%;
-    left: 10%;
+    top: 18%;
+    left: 7%;
 }
 .ms-clock-png {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 27%;
-    left: 10%;
+    top: 40%;
+    left: 7%;
 }
 .ms-telephone-png {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 46%;
-    left: 10%;
+    top: 64%;
+    left: 7%;
 }
 .ms-facebook-png {
     height: 64px;
     width: 64px;
     position: absolute;
-    top: 65%;
+    top: 80%;
     left: 20%;
 }
 .ms-insta-png {
     height: 64px;
     width: 64px;
     position: absolute;
-    top: 65%;
+    top: 80%;
     left: 45%;
 }
 .ms-tripadvisor-png {
     height: 64px;
     width: 64px;
     position: absolute;
-    top: 65%;
+    top: 80%;
     left: 70%;
+}
+
+#googleMap {
+    height: 100%;
+    padding-bottom: 2%;
 }
 
 @media screen and (max-width: 400px) {
