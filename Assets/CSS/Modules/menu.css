@@ -52,8 +52,8 @@
 #startersItem {
     background-color: var(--main-text-color);
     color: var(--dark-color);
-    height: 72px;
-    padding-top: 16px;
+    height: 64px;
+    padding-top: 8px;
 }
 
 #startersContent {
@@ -126,5 +126,38 @@
 
 .ms-knot-transition {
     height: 7vh;
+}
+
+/* Mobile version */
+
+@media screen and (max-width: 400px) {
+
+    .ms-menu-items {
+        font-size: 24px;
+        padding-bottom: 14px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .ms-menu-content {
+        padding: 24px 12px;
+    }
+
+    .ms-dish-label, .ms-dish-price, .ms-dish-transition {
+        padding-top: 4px;
+    }
+
+    .ms-dish-label {
+        font-size: 15px;
+    }
+
+    .ms-dish-price {
+        font-size: 12px;
+    }
+
+    #previousButton, #nextButton {
+        display: none;
+    }
 }
 

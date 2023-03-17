@@ -82,11 +82,12 @@
 
 
     // Defining style when user clicks on "Entrées"
+    // Change background-color, font color, tab height and display selected section
     function openStarters() {
         startersItem.style.backgroundColor = "#E1DBCA";
         startersItem.style.color = "#102839";
-        startersItem.style.height = "72px";
-        startersItem.style.paddingTop = "16px";
+        startersItem.style.height = "64px";
+        startersItem.style.paddingTop = "8px";
         mainsItem.style.backgroundColor = "#102839";
         mainsItem.style.color = "#E1DBCA";
         mainsItem.style.height = "56px";
@@ -105,8 +106,8 @@
     function openMains() {
         mainsItem.style.backgroundColor = "#E1DBCA";
         mainsItem.style.color = "#102839";
-        mainsItem.style.height = "72px";
-        mainsItem.style.paddingTop = "16px";
+        mainsItem.style.height = "64px";
+        mainsItem.style.paddingTop = "8px";
         startersItem.style.backgroundColor = "#102839";
         startersItem.style.color = "#E1DBCA";
         startersItem.style.height = "56px";
@@ -125,8 +126,8 @@
     function openDesserts() {
         dessertsItem.style.backgroundColor = "#E1DBCA";
         dessertsItem.style.color = "#102839";
-        dessertsItem.style.height = "72px";
-        dessertsItem.style.paddingTop = "16px";
+        dessertsItem.style.height = "64px";
+        dessertsItem.style.paddingTop = "8px";
         startersItem.style.backgroundColor = "#102839";
         startersItem.style.color = "#E1DBCA";
         startersItem.style.height = "56px";
