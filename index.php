@@ -22,7 +22,8 @@ include "_includes/form.php";
 include "_includes/contact.php";
 
 //fichier php du footer avec liens obligatoires
-include "_includes/footer.php"
+include "_includes/footer.php";
+
 
 ?>
 

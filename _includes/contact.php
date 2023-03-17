@@ -14,11 +14,11 @@
             millesabords@wanadoo.fr</p>
 
         <img class="ms-place-png" src="../Assets/Images/adresse%201.png" alt="adresse">
-        <img class="ms-facebook-png" src="../Assets/Images/facebook.png" alt="facebook">
+            <a href="#"><img class="ms-facebook-png" src="../Assets/Images/facebook.png" alt="facebook"></a>
         <img class="ms-clock-png" src="../Assets/Images/horloge.png" alt="horloge">
-        <img class="ms-insta-png" src="../Assets/Images/insta.png" alt="instagram">
+            <a href="#"><img class="ms-insta-png" src="../Assets/Images/insta.png" alt="instagram"></a>
         <img class="ms-telephone-png" src="../Assets/Images/telephone.png" alt="telephone">
-        <img class="ms-tripadvisor-png" src="../Assets/Images/tripadvisor.png" alt="tripadvisor">
+            <a href="#"><img class="ms-tripadvisor-png" src="../Assets/Images/tripadvisor.png" alt="tripadvisor"></a>
     </div>
 
     </div>
