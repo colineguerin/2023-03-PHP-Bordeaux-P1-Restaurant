@@ -1,7 +1,7 @@
 <?php
 //fichier php du head
 include "_includes/head.php"
-?> <h1>Test</h1>
+?>
 <?php
 //fichier php de la page accueil avec barre de navigation et photo
 include "_includes/header.php";
@@ -30,55 +30,108 @@ include "_includes/footer.php"
 
     <script type="text/javascript">
 
-        window.addEventListener('scroll', () => {
-            let positionSectionActuelleCards = document.querySelector(".ms-cards").getBoundingClientRect().y;
-            let positionSectionActuelleMenu = document.querySelector(".ms-menu").getBoundingClientRect().y;
-            let positionSectionActuelleBooking = document.querySelector(".ms-booking").getBoundingClientRect().y;
-            let positionSectionActuelleContact = document.querySelector(".ms-contact").getBoundingClientRect().y;
+    window.addEventListener('scroll', () => {
 
+        //let bateau = document.querySelector(".bateau")
 
-            //if (positionSectionActuelleCards<hauteurActuelle)
+        let body = document.querySelector('body')
+        let tailleBody = body.getBoundingClientRect().height
 
-            let bat = document.querySelector(".bateau");
-            let positionBateau = 0;
-            let bottomNav = document.querySelector(".navigation-globale").getBoundingClientRect().bottom
-            let hmin = bottomNav * 1.5;
+        // on définit la hauteur de chaque section de la page
 
-            // on définit le rapport entre la position de la section actuelle et initiale
-            let positionSectionActuelle = document.querySelector(".noeud").getBoundingClientRect().y;
-            let hauteurActuelle = positionSectionActuelle - bottomNav;
+        let tailleHeader = document.querySelector('.header').getBoundingClientRect().height
+        let tailleCards = document.querySelector('.ms-cards').getBoundingClientRect().height
+        let tailleCarousel = document.querySelector('.ms-carousel').getBoundingClientRect().height
+        let tailleMenu = document.querySelector('.ms-menu').getBoundingClientRect().height
+        let tailleForm = document.querySelector('.ms-booking').getBoundingClientRect().height
+        let tailleContact = tailleBody-(tailleHeader+tailleCards+tailleMenu+tailleCarousel+tailleForm)
 
-            let positionSectionInitiale = window.innerHeight;
-            let hauteurInitiale = positionSectionInitiale - bottomNav;
+        let hauteurContact = (tailleHeader+tailleCards+tailleCarousel+tailleMenu+tailleForm)
+        let hauteurForm = (tailleHeader+tailleCards+tailleCarousel+tailleMenu)
+        let hauteurMenu = (tailleHeader+tailleCards+tailleCarousel)
+        let hauteurCards = tailleHeader
 
-            let rapportHauteur = hauteurActuelle / hauteurInitiale;
+        // on calcule la proportion de la section par rapport à la hauteur totale
 
-            // on définit la position à atteindre pour le bâteau
-            let positionMenuDroit = document.querySelector(".concept").getBoundingClientRect().right;
-            let positionMenuGauche = document.querySelector(".concept").getBoundingClientRect().left;
-            let positionMenu = (positionMenuDroit - positionMenuGauche) / 2;
+        let rapportHeader = tailleHeader/tailleBody
+        let rapportCards = (tailleCards+tailleCarousel)/tailleBody
+        let rapportMenu = tailleMenu/tailleBody
+        let rapportForm = tailleForm/tailleBody
+        let rapportContact = tailleContact/tailleBody
 
-            // on définit la longueur de la section que va parcourir le bateau
-            let positionBateauInitial = document.querySelector(".logo").getBoundingClientRect().right;
-            let positionBateauMarge = positionBateauInitial * 1.1;
+        // on définit la proportion de chaque segment à parcourir
 
-            //on définit le rapport en largeur
-            let longueuraParcourir = positionMenu - positionBateauMarge;
-            let rapportLongueur = longueuraParcourir/(window.innerWidth);
+        let rapport1 = 0.25
+        let rapport2 = 0.2
+        let rapport3 = 0.2
+        let rapport4 = 0.2
+        let rapport5 = 0.15
 
-            positionBateau = 1/((rapportHauteur * longueuraParcourir)*rapportLongueur)*100;
-            bat.style.marginLeft=`${positionBateau}%`;
-            //console.log(positionBateau);
-        })
+        // on calcule le coef entre la proportion de la section et la proportion du segment à parcourir
+
+        let coef1 = rapportHeader/rapport1
+        let coef2 = rapportCards/rapport2
+        let coef3 = rapportMenu/rapport3
+        let coef4 = rapportForm/rapport4
+        let coef5 = rapportContact/rapport5
+
+        let batWidth = document.querySelector(".bateauWidth")
+        let scrollY = window.scrollY
+        let scrollSection
+        let minWidth
+        let scroll
+        let scrollPercent
+        let scrollGlobal
+        let maxWidth
+
+        if (scrollY < hauteurCards ){
+            scrollSection=scrollY
+            scroll = scrollSection / (body.clientHeight)
+            scrollPercent = (scroll*100)/coef1
+            scrollGlobal=scrollPercent
+            maxWidth = rapport1*100
+            batWidth.style.maxWidth=`${maxWidth}%`
+            batWidth.style.width=`${scrollGlobal}%`
+        } else if (scrollY >= hauteurCards && scrollY < hauteurMenu) {
+            minWidth = rapport1*100
+            scrollSection = (scrollY - hauteurCards)
+            scroll = scrollSection / (body.clientHeight - window.innerHeight)
+            scrollPercent = (scroll*100)/coef2
+            scrollGlobal = minWidth+scrollPercent
+            maxWidth = (rapport1+rapport2)*100
+            batWidth.style.maxWidth=`${maxWidth}%`
+            batWidth.style.width=`${scrollGlobal}%`
+            console.log(222222222222222222222)
+        } else if (scrollY >= hauteurMenu && scrollY < hauteurForm){
+            minWidth = (rapport1+rapport2)*100
+            scrollSection = (scrollY - hauteurMenu)
+            scroll = scrollSection / (body.clientHeight - window.innerHeight)
+            scrollPercent = (scroll*100)/coef3
+            scrollGlobal = minWidth+scrollPercent
+            maxWidth = (rapport1+rapport2+rapport3) * 100
+            batWidth.style.maxWidth=`${maxWidth}%`
+            batWidth.style.width=`${scrollGlobal}%`
+            console.log(3333333333333333)
+        } else if (scrollY >= hauteurForm && scrollY < hauteurContact) {
+            minWidth = (rapport1+rapport2+rapport3) * 100
+            scrollSection = (scrollY - hauteurForm)
+            scroll = scrollSection / (body.clientHeight - window.innerHeight)
+            scrollPercent = (scroll * 100)/coef4
+            scrollGlobal = minWidth+scrollPercent
+            maxWidth = (rapport1+rapport2+rapport3+rapport4) * 100
+            batWidth.style.maxWidth=`${maxWidth}%`
+            batWidth.style.width=`${scrollGlobal}%`
+            console.log(444444444444)
+        } else if (scrollY >= hauteurContact){
+            minWidth = (rapport1+rapport2+rapport3+rapport4) * 100
+            scrollSection = (scrollY - hauteurContact)
+            scroll = scrollSection / (body.clientHeight - window.innerHeight)
+            scrollPercent = (scroll * 100)/coef5
+            scrollGlobal = minWidth+scrollPercent
+            batWidth.style.width=`${scrollGlobal}%`
+            console.log(555555555555555)
+        }
+        console.log(scrollGlobal)
+})
+
     </script>
-
-<?php
-//  const bat = document.querySelector(".bateau")
-//    window.addEventListener('scroll', () => {
-//        if (window.screenY>3){
-//            bat.classList.add('scroll');
-//        }
-//    }
-
-// let scroll = window.scrollY / (body.clientHeight - window.innerHeiht)
-// let scrollPercent = = Math.round(scroll*100)
