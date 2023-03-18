@@ -33,8 +33,7 @@ include "_includes/footer.php";
 
     window.addEventListener('scroll', () => {
 
-        //let bateau = document.querySelector(".bateau")
-
+        let bateau = document.querySelector(".bateau")
         let body = document.querySelector('body')
         let tailleBody = body.getBoundingClientRect().height
 
@@ -47,9 +46,9 @@ include "_includes/footer.php";
         let tailleForm = document.querySelector('.ms-booking').getBoundingClientRect().height
         let tailleContact = tailleBody-(tailleHeader+tailleCards+tailleMenu+tailleCarousel+tailleForm)
 
-        let hauteurContact = (tailleHeader+tailleCards+tailleCarousel+tailleMenu+tailleForm)
-        let hauteurForm = (tailleHeader+tailleCards+tailleCarousel+tailleMenu)
-        let hauteurMenu = (tailleHeader+tailleCards+tailleCarousel)
+        let hauteurContact = (tailleHeader+tailleCards+tailleCarousel+tailleMenu+tailleForm)*1.05
+        let hauteurForm = (tailleHeader+tailleCards+tailleCarousel+tailleMenu)*1.05
+        let hauteurMenu = (tailleHeader+tailleCards+tailleCarousel)*1.1
         let hauteurCards = tailleHeader
 
         // on calcule la proportion de la section par rapport à la hauteur totale
@@ -59,6 +58,18 @@ include "_includes/footer.php";
         let rapportMenu = tailleMenu/tailleBody
         let rapportForm = tailleForm/tailleBody
         let rapportContact = tailleContact/tailleBody
+
+        /*rapportHeader = 0.0988
+        rapportCards = 0.3484
+        rapportMenu = 0.2855
+        rapportForm = 0.0972
+        rapportContact = 0.1699*/
+
+        rapportHeader = 0.17
+        rapportCards = 0.39
+        rapportMenu = 0.17
+        rapportForm = 0.14
+        rapportContact = 0.15
 
         // on définit la proportion de chaque segment à parcourir
 
@@ -93,6 +104,7 @@ include "_includes/footer.php";
             maxWidth = rapport1*100
             batWidth.style.maxWidth=`${maxWidth}%`
             batWidth.style.width=`${scrollGlobal}%`
+            console.log(1111111111111111111111)
         } else if (scrollY >= hauteurCards && scrollY < hauteurMenu) {
             minWidth = rapport1*100
             scrollSection = (scrollY - hauteurCards)
@@ -132,7 +144,7 @@ include "_includes/footer.php";
             batWidth.style.width=`${scrollGlobal}%`
             console.log(555555555555555)
         }
-        console.log(scrollGlobal)
+        //console.log(scrollGlobal)
 })
 
     </script>

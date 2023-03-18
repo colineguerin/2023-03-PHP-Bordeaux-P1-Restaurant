@@ -49,6 +49,7 @@ li{
     flex-direction: column;
     align-items: flex-end;
     margin-top: 10vh;
+    margin-bottom: 0;
 }
 
 .titre{
@@ -66,9 +67,9 @@ li{
 }
 
 .noeud{
-    margin: 10px auto 10px auto;
+    margin: 6vh auto;
     display: flex;
-    height: 7vh;
+    height: 10vh;
 }
 
 .bateauWidthTotal{
@@ -81,16 +82,27 @@ li{
 }
 
 .bateauWidth{
-    background-color: red;
+    /*background-color: red;*/
     height: 6vh;
-    min-width: 15%;
-    max-width: 95%;
+    min-width: 10%;
+    max-width: 98%;
     z-index: 5;
 }
 
 .bateau {
     height: 6vh;
-    animation: progress 1s linear;
+    animation: bateauZoom 1.5s infinite;
     z-index: 5;
-}
+    }
 
+ @keyframes bateauZoom {
+     0% {
+        transform: scale(1);
+     }
+     50% {
+        transform: scale(1.1);
+     }
+     100% {
+         transform: scale(1);
+     }
+ }

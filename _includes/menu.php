@@ -60,7 +60,7 @@
             </div>
             </div>
         </div>
-        <div class="ms-next-button-wrapper">
+        <div class="ms-next-button-wrapper"  id="ancreBooking">
             <button id="nextButton" onclick="openNext()"></button>
         </div>
     </div>
