@@ -16,7 +16,9 @@
 
 @import "Modules/footer.css";
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;

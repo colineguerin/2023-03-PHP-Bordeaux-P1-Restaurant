@@ -35,6 +35,6 @@
             <option value="21:00">
         </datalist>
         <textarea class="ms-demands" name="ms-demands" rows="5" cols="50" placeholder="Demandes particulières"></textarea>
-        <input type="submit" class="ms-button" value="Réserver">
+        <input type="submit" class="ms-button" value="Réserver" id="ancreContact">
     </form>
 </section>
