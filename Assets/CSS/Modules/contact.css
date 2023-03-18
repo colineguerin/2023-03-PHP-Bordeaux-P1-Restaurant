@@ -10,7 +10,7 @@
 
 .ms-map-infos {
    display: flex;
-    height:100%;
+   height: 84%;
 }
 
 .w-50 {
@@ -24,70 +24,78 @@ iframe {
 
 .ms-contact-infos p{
     height: auto;
-    font-family: Hanuman;
-    font-size: 24px;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
     color: var(--dark-color);
-    padding-top: 32px;
+
 }
 
 h5 {
     font-family: "Advent Pro";
-    font-size: 40px;
+    font-size: 2.5rem;
     color: var(--dark-color);
     font-weight: bold;
+    margin-bottom: 5%;
+    padding-left: 18%;
 }
 
 .ms-contact-infos {
     text-align: center;
     position: relative;
+
 }
 
-.ms-infos-text {
-    padding-top: 16px;
+.ms-group-adress {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding-right: 25%;
+    padding-left: 15%;
+    margin-bottom: 10%;
 }
 
+.ms-group-time {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding-right: 20%;
+    padding-left: 15%;
+    margin-bottom: 10%;
+}
+.ms-group-contact {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding-right: 20%;
+    padding-left: 15%;
+    margin-bottom: 10%;
+}
 
-.ms-place-png {
-    height: 45px;
-    width: 45px;
-    position: absolute;
-    top: 12%;
-    left: 10%;
-}
-.ms-clock-png {
-    height: 45px;
-    width: 45px;
-    position: absolute;
-    top: 27%;
-    left: 10%;
-}
-.ms-telephone-png {
-    height: 45px;
-    width: 45px;
-    position: absolute;
-    top: 46%;
-    left: 10%;
-}
 .ms-facebook-png {
-    height: 64px;
-    width: 64px;
+    height: 55px;
+    width: 55px;
     position: absolute;
-    top: 65%;
+    top: 80%;
     left: 20%;
 }
 .ms-insta-png {
-    height: 64px;
-    width: 64px;
+    height: 55px;
+    width: 55px;
     position: absolute;
-    top: 65%;
+    top: 80%;
     left: 45%;
 }
 .ms-tripadvisor-png {
-    height: 64px;
-    width: 64px;
+    height: 55px;
+    width: 55px;
     position: absolute;
-    top: 65%;
+    top: 80%;
     left: 70%;
+}
+
+#googleMap {
+    height: 100%;
+    padding-bottom: 2%;
 }
 
 @media screen and (max-width: 400px) {

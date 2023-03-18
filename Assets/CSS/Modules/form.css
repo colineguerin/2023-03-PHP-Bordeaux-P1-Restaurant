@@ -13,12 +13,11 @@ Defining the section .ms-form as grid and placing it in the center of the page
 }
 
 /*
-Definig the form itself as a grid
+Defining the form itself as a grid
  */
 
 form {
     display: grid;
-    /* No need to define the grid template apparently*/
     grid-template: repeat(3, 9vh) 22vh 10vh / repeat(2, 1fr);
     /*grid-template-rows: repeat(3, 65px) 1fr 1fr;
      */
@@ -102,22 +101,91 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 
+/*
+--- Custom styles on mobiles ---
+ */
+
 @media screen and (max-width: 400px) {
+
+    /*
+    Defining styles for the section
+     */
     .ms-booking {
         width: 50vw;
-        margin: 15vh auto;
+        margin: 5vh auto;
     }
 
+    /*
+    Defining a grid area for each input and their spans in the grid
+     */
+
+    .ms-name {
+        grid-area: name;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .ms-phone {
+        grid-area: phone;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .ms-mail {
+        grid-area: mail;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .ms-plates {
+        grid-area: plates;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .ms-date {
+        grid-area: date;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+    }
+
+    .ms-hour {
+        grid-area: hour;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+    }
+
+    .ms-demands {
+        grid-area: demands;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+    }
+
+    .ms-button {
+        grid-area: submit;
+        grid-column-end: 4;
+    }
+
+    /*
+    input:not(.ms-plates), input:not(.ms-date), input:not(.ms-hour) {
+    }
+*/
     form {
         grid-template: repeat(6, 7vh) / 1fr;
+        grid:
+        "name" 7vh
+        "phone" 7vh
+        "mail" 7vh
+        "plates" "date" "hour" 7vh
+        "demands" auto
+        "submit" auto/ calc(60vw/3) calc(60vw/3) calc(60vw/3);
     }
 
     input {
         height: 7vh;
-    }
-
-    .ms-plates, .ms-date, .ms-hour {
-
     }
 
     textarea {
@@ -130,9 +198,14 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
 
     .ms-button {
-        grid-column-end: initial;
+        grid-column-end: 4;
         width: initial;
         padding: 2vw;
     }
 
+
 }
+
+/*
+--- End of custom style on mobiles ---
+ */
