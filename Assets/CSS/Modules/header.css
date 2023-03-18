@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .navigation-globale{
     width: 100vw;
     height: 15vh;
@@ -14,9 +13,8 @@
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 4;
 }
-
 
 .logo{
     height: 17vh;
@@ -41,7 +39,6 @@ li{
 .surlign{
     text-decoration: none;
     color: #102839;
-
 }
 
 .accueil{
@@ -74,11 +71,26 @@ li{
     height: 7vh;
 }
 
-.bateau{
-    position: absolute;
-    top: 10vh;
-    left: 12vw;
+.bateauWidthTotal{
+    height: 6vh;
+    margin: 0;
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    display: flex;
+}
+
+.bateauWidth{
+    background-color: red;
+    height: 6vh;
+    min-width: 15%;
+    max-width: 95%;
+    z-index: 5;
+}
+
+.bateau {
     height: 6vh;
     animation: progress 1s linear;
+    z-index: 5;
 }
 
