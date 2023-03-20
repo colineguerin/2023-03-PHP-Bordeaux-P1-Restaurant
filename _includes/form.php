@@ -10,7 +10,7 @@
 
 <!--Section containing the form with 7 inputs and 1 button -->
 
-<section class="ms-booking" id="ancreBooking">
+<section class="ms-booking transitioned fade-right" id="ancreBooking">
     <h2 class="ms-title-section"><span class="ms-h2-small">Pour</span><span class="ms-h2-big"> Réserver</span></h2>
 
     <form action="" class="ms-form-booking">
