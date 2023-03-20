@@ -169,10 +169,6 @@ input:focus::placeholder, textarea:focus::placeholder {
         grid-column-end: 4;
     }
 
-    /*
-    input:not(.ms-plates), input:not(.ms-date), input:not(.ms-hour) {
-    }
-*/
     form {
         grid-template: repeat(6, 7vh) / 1fr;
         grid:
@@ -193,37 +189,34 @@ input:focus::placeholder, textarea:focus::placeholder {
         grid-column-end: initial;
     }
 
+    /*
+    Reducing font size of placeholders on mobile
+     */
     ::-webkit-input-placeholder, input, textarea {
         font-size: 1.25rem;
     }
 
+    /*
+    Resetting width and defining a different padding on mobiles to have a button which takes whole of the text
+     */
     .ms-button {
-        grid-column-end: 4;
         width: initial;
         padding: 2vw;
     }
 
-    input[type=date]::-webkit-datetime-edit-text {
+    /*
+    On mobiles, input of date and time types don't display any value, only their logos which are centered
+     */
+
+    input[type=date]::-webkit-datetime-edit-text, input[type=date]::-webkit-datetime-edit-month-field, input[type=date]::-webkit-datetime-edit-day-field, input[type=date]::-webkit-datetime-edit-year-field, input[type=time]::-webkit-datetime-edit-text, input[type=time]::-webkit-datetime-edit-hour-field, input[type=time]::-webkit-datetime-edit-minute-field {
         -webkit-appearance: none;
         display: none;
     }
 
-    input[type=date]::-webkit-datetime-edit-month-field{
-         -webkit-appearance: none;
-         display: none;
-     }
-    input[type=date]::-webkit-datetime-edit-day-field {
-        -webkit-appearance: none;
-        display: none;
-    }
-    input[type=date]::-webkit-datetime-edit-year-field {
-        -webkit-appearance: none;
-        display: none;
-    }
-
-    input[type=date]::-webkit-calendar-picker-indicator {
+    input[type=date]::-webkit-calendar-picker-indicator, input[type=time]::-webkit-calendar-picker-indicator {
         transform: translateX(-55%);
     }
+
 
 }
 
