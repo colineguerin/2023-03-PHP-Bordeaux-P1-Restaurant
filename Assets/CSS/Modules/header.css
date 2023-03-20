@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.navigation-globale{
+.ms-navbar {
     width: 100vw;
     height: 15vh;
     display: flex;
@@ -16,7 +16,7 @@
     z-index: 4;
 }
 
-.logo{
+.ms-logo{
     height: 17vh;
     margin: 0.5% auto auto 0.5%;
 }
@@ -72,7 +72,7 @@ li{
     height: 10vh;
 }
 
-.bateauWidthTotal{
+.ms-boatWidthTotal{
     height: 6vh;
     margin: 0;
     position: fixed;
@@ -81,7 +81,7 @@ li{
     display: flex;
 }
 
-.bateauWidth{
+.ms-boatWidth{
     /*background-color: red;*/
     height: 6vh;
     min-width: 10%;
@@ -89,7 +89,7 @@ li{
     z-index: 5;
 }
 
-.bateau {
+.ms-boat {
     height: 6vh;
     animation: bateauZoom 1.5s infinite;
     z-index: 5;
