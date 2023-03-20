@@ -108,15 +108,13 @@ include "_includes/footer.php";
         }
 
 
-        let animVersDroite = document.querySelectorAll('@keyframes translateVersDroite');
+        let animVersDroite = document.;
         let animVersGauche = document.querySelectorAll('@keyframes translateVersGauche');
 
-        if (scrollY > 10%) {
-            animVersDroite = 'running';
-            animVersGauche = 'running';
-        }
+        */
 
-         */
+
+
 
         if (scrollY < hauteurCards ){
             scrollSection=scrollY
@@ -190,5 +188,17 @@ include "_includes/footer.php";
 
 })
 
+
+    window.addEventListener("scroll",()=>{
+const body = document.querySelector("body")
+            let scroll = window.scrollY / (body.clientHeight)
+            let scrollPercent = Math.round(scroll*100)
+        let anim = document.querySelector(".ms-card1.trans")
+        if(scrollPercent >=8){
+          anim.style.transition="5s"
+        }
+        }
+
+    )
 
     </script>
