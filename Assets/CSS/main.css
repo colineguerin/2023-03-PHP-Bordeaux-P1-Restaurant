@@ -81,14 +81,138 @@ h2 + * {
 }
 
 /* WIP transitions on carousel and menu */
-
-.transitionedUp {
+/*
+.fade-bottom {
     opacity: 0;
     transform: translateY(150px);
     transition: 1s all ease;
 }
 
-.transitionedUp.active{
+.transitioned.active{
     transform: translateY(0);
     opacity: 1;
 }
+*/
+
+.transitioned {
+    opacity: 0;
+}
+
+.transitioned.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 0.8s ease-in;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+.active.fade-still {
+    animation: fade-still 1s ease-in;
+}
+/*
+.active.ms-card1-trans {
+    animation: translateVersDroite 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.active.ms-image-card1-trans {
+    animation: pauseTranslate 1s, translateVersGauche 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.active.ms-card2-trans {
+    animation: translateVersGauche 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.active.ms-image-card2-trans {
+    animation: translateVersDroite 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+*/
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(15vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-still {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+/*
+@keyframes translateVersDroite {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes translateVersGauche {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+*/
+/*
+@keyframes pauseTranslate {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+*/
