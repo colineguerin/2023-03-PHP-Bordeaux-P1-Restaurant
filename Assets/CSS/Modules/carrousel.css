@@ -66,6 +66,33 @@ Photos to the right
     z-index: 0;
 }
 
+/*
+Hiding antipods photos otherwise they would appear behind the checked photo
+ */
+
+#photo-1:checked ~ .ms-carousel-photos #meal-4 {
+    visibility: hidden;
+}
+
+#photo-2:checked ~ .ms-carousel-photos #meal-5 {
+    visibility: hidden;
+}
+
+#photo-3:checked ~ .ms-carousel-photos #meal-6 {
+    visibility: hidden;
+}
+
+#photo-4:checked ~ .ms-carousel-photos #meal-1 {
+    visibility: hidden;
+}
+
+#photo-5:checked ~ .ms-carousel-photos #meal-2 {
+    visibility: hidden;
+}
+
+#photo-6:checked ~ .ms-carousel-photos #meal-3 {
+    visibility: hidden;
+}
 
 
 /* --- DISPLAY MORE PHOTOS ---
@@ -140,35 +167,53 @@ Not displaying too many photos on phones, when photo 1 is in front, photos 3, 4,
         height: 40vh;
         margin: auto auto 5vh auto;
     }
+
+    /*
+Photos to the left
+ */
+    #photo-1:checked ~ .ms-carousel-photos #meal-6, #photo-2:checked ~ .ms-carousel-photos #meal-1, #photo-3:checked ~ .ms-carousel-photos #meal-2, #photo-4:checked ~ .ms-carousel-photos #meal-3, #photo-5:checked ~ .ms-carousel-photos #meal-4, #photo-6:checked ~ .ms-carousel-photos #meal-5 {
+        opacity: .6;
+    }
+
+
+    /*
+    Photos to the right
+     */
+    #photo-1:checked ~ .ms-carousel-photos #meal-2, #photo-2:checked ~ .ms-carousel-photos #meal-3, #photo-3:checked ~ .ms-carousel-photos #meal-4, #photo-4:checked ~ .ms-carousel-photos #meal-5, #photo-5:checked ~ .ms-carousel-photos #meal-6, #photo-6:checked ~ .ms-carousel-photos #meal-1 {
+        opacity: .6;
+    }
+
     /*
     Display the photos necessary pls on mobile
      */
-
-}
-
-
-
-#photo-1:checked ~ .ms-carousel-photos #meal-4 {
+    #photo-1:checked ~ .ms-carousel-photos #meal-3, #photo-1:checked ~ .ms-carousel-photos #meal-5{
         visibility: hidden;
+    }
+
+    #photo-2:checked ~ .ms-carousel-photos #meal-4, #photo-2:checked ~ .ms-carousel-photos #meal-6 {
+        visibility: hidden;
+    }
+
+    #photo-3:checked ~ .ms-carousel-photos #meal-1, #photo-3:checked ~ .ms-carousel-photos #meal-5 {
+        visibility: hidden;
+    }
+
+    #photo-4:checked ~ .ms-carousel-photos #meal-2, #photo-4:checked ~ .ms-carousel-photos #meal-6 {
+        visibility: hidden;
+    }
+
+    #photo-5:checked ~ .ms-carousel-photos #meal-1, #photo-5:checked ~ .ms-carousel-photos #meal-3 {
+        visibility: hidden;
+    }
+
+    #photo-6:checked ~ .ms-carousel-photos #meal-2, #photo-6:checked ~ .ms-carousel-photos #meal-4 {
+        visibility: hidden;
+    }
+
+
 }
 
-#photo-2:checked ~ .ms-carousel-photos #meal-5 {
-        visibility: hidden;
-}
 
-#photo-3:checked ~ .ms-carousel-photos #meal-6 {
-        visibility: hidden;
-}
 
-#photo-4:checked ~ .ms-carousel-photos #meal-1 {
-        visibility: hidden;
-}
 
-#photo-5:checked ~ .ms-carousel-photos #meal-2 {
-        visibility: hidden;
-}
-
-#photo-6:checked ~ .ms-carousel-photos #meal-3 {
-        visibility: hidden;
-}
 

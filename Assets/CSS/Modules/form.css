@@ -66,7 +66,7 @@ Defining the font for placeholders
 
 ::-webkit-input-placeholder, input, textarea {
     font-size: 1.5rem;
-    font-family: Hanuman;
+    font-family: var(--secondary-font);
     color: var(--main-text-color);
 }
 
@@ -203,6 +203,27 @@ input:focus::placeholder, textarea:focus::placeholder {
         padding: 2vw;
     }
 
+    input[type=date]::-webkit-datetime-edit-text {
+        -webkit-appearance: none;
+        display: none;
+    }
+
+    input[type=date]::-webkit-datetime-edit-month-field{
+         -webkit-appearance: none;
+         display: none;
+     }
+    input[type=date]::-webkit-datetime-edit-day-field {
+        -webkit-appearance: none;
+        display: none;
+    }
+    input[type=date]::-webkit-datetime-edit-year-field {
+        -webkit-appearance: none;
+        display: none;
+    }
+
+    input[type=date]::-webkit-calendar-picker-indicator {
+        transform: translateX(-55%);
+    }
 
 }
 
