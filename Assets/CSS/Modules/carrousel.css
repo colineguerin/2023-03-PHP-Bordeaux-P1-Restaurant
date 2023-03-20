@@ -3,6 +3,16 @@
     height: 70vh;
     max-width: 80vw;
     transform-style: preserve-3d;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: 1s all ease;
+
+
+}
+
+.ms-carousel.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 input[type=radio] {

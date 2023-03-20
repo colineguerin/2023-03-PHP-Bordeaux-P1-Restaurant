@@ -79,3 +79,16 @@ h2 + * {
     }
 
 }
+
+/* WIP transitions on carousel and menu */
+
+.transitionedUp {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: 1s all ease;
+}
+
+.transitionedUp.active{
+    transform: translateY(0);
+    opacity: 1;
+}

@@ -1,6 +1,6 @@
 <?php
 //fichier php du head
-include "_includes/head.php"
+include "_includes/head.php";
 ?>
 <?php
 //fichier php de la page accueil avec barre de navigation et photo
@@ -28,6 +28,7 @@ include "_includes/footer.php";
 ?>
 
 <link rel="stylesheet" href="Assets/CSS/main.css">
+<script src="./Assets/Javascript/script.js"></script>
 
     <script type="text/javascript">
 
