@@ -1,6 +1,6 @@
 <?php ?>
 
-<section class="ms-menu transitionedUp">
+<section class="ms-menu transitioned fade-left">
 
     <h2 class="ms-menu-section-title"><span class="ms-h2-small">La</span><span class="ms-h2-big"> Carte</span></h2>
     <div class="ms-menu-wrapper">
