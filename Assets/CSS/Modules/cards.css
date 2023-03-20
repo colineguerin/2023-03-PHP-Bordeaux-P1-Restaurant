@@ -1,3 +1,8 @@
+#ancreCards {
+    margin-bottom: 12vh;
+    z-index: 5;
+}
+
 .ms-cards {
     display: grid;
     grid:
@@ -11,18 +16,73 @@
     width: 50vw;
     height: auto;
 }
+
+@keyframes translateVersDroite {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes translateVersGauche {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 .ms-card1 {
     grid-area: theConcept;
+    opacity: 0;
 }
+
+.ms-card1.trans {
+    grid-area: theConcept;
+    animation: translateVersDroite 1s;
+    animation-fill-mode: forwards;
+}
+
 .ms-card2 {
     grid-area: theFood;
+    opacity: 0;
 }
+
+.ms-card2.trans {
+    grid-area: theFood;
+    animation: translateVersGauche 1s;
+    animation-fill-mode: forwards;
+}
+
 .ms-image-card1{
     grid-area: image-card1;
+    opacity: 0;
+}
+
+.ms-image-card1.trans {
+    grid-area: image-card1;
+    animation: translateVersGauche 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
 
 .ms-image-card2{
     grid-area: image-card2;
+    opacity: 0;
+}
+
+.ms-image-card2.trans {
+    grid-area: image-card2;
+    animation: translateVersDroite 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 .ms-theConcept, .ms-theFood {
