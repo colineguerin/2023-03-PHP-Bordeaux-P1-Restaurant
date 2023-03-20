@@ -8,7 +8,7 @@
 
         <div class="ms-card2">
         <h3 class="ms-theFood"><span class="ms-h2-small-card">La </span> <span class="ms-h2-big-card">Cuisine</span></h3>
-        <p class="ms-foodText">Notre chef-capitaine Jean Bokuistot sélectionne pour vous les meilleurs produits, selon des variables de saison et d'origine définies avec soin. Sa cuisine, essentiellement orientée objet, ainsi que la structure remarquable de ses plats en font de véritables tableaux culinaires. Accompagné de son crew d'excellence, Jean Bokuistot ne recule jamais devant un challenge. Comme il aime le répéter en boucle : "le principal, c'est que ça marche !"
+        <p class="ms-foodText">Notre chef-capitaine Jean Bokuistot sélectionne pour vous les meilleurs produits, selon des variables de saison et d'origine définies avec soin. Sa cuisine, essentiellement orientée objet, ainsi que la structure remarquable de ses plats en font de véritables tableaux culinaires. Et, comme il aime le répéter en boucle : "le principal, c'est que ça marche !"
         </p>
     </div>
     <img class="ms-image-card2" src="../Assets/Images/cuisine1.png" alt="cuisine">
