@@ -105,7 +105,18 @@ include "_includes/footer.php";
             cardGaucheHaut.classList.add('Slide')
         } else if (scrollY > hauteurMenu*0.8){
             cardGaucheHaut.classList.remove('Slide')
-        }*/
+        }
+
+
+        let animVersDroite = document.querySelectorAll('@keyframes translateVersDroite');
+        let animVersGauche = document.querySelectorAll('@keyframes translateVersGauche');
+
+        if (scrollY > 10%) {
+            animVersDroite = 'running';
+            animVersGauche = 'running';
+        }
+
+         */
 
         if (scrollY < hauteurCards ){
             scrollSection=scrollY
@@ -178,5 +189,6 @@ include "_includes/footer.php";
 
 
 })
+
 
     </script>

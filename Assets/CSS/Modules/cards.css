@@ -33,6 +33,7 @@
         transform: translateX(100%);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0%);
         opacity: 1;
@@ -46,7 +47,7 @@
 
 .ms-card1.trans {
     grid-area: theConcept;
-    animation: translateVersDroite 1s;
+    animation: translateVersDroite 0.7s;
     animation-fill-mode: forwards;
 }
 
@@ -57,7 +58,7 @@
 
 .ms-card2.trans {
     grid-area: theFood;
-    animation: translateVersGauche 1s;
+    animation: translateVersGauche 0.7s;
     animation-fill-mode: forwards;
 }
 
