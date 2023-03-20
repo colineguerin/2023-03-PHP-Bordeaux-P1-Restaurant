@@ -10,7 +10,7 @@
 
 .ms-map-infos {
    display: flex;
-    height: 84%;
+   height: 84%;
 }
 
 .w-50 {
@@ -36,7 +36,8 @@ h5 {
     color: var(--dark-color);
     font-weight: bold;
     margin-bottom: 5%;
-    padding-left: 18%;
+    padding-left: 5%;
+
 }
 
 .ms-contact-infos {
@@ -49,7 +50,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     height: 10%;
-    padding-right: 25%;
+    padding-right: 30%;
     padding-left: 15%;
     margin-bottom: 10%;
 }
@@ -58,7 +59,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     height: 10%;
-    padding-right: 20%;
+    padding-right: 25%;
     padding-left: 15%;
     margin-bottom: 10%;
 }
@@ -66,7 +67,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     height: 10%;
-    padding-right: 20%;
+    padding-right: 25%;
     padding-left: 15%;
     margin-bottom: 10%;
 }
@@ -98,6 +99,8 @@ h5 {
     padding-bottom: 2%;
 }
 
+
+
 @media screen and (max-width: 400px) {
     h5 {
         font-size: 32px;
@@ -107,7 +110,6 @@ h5 {
         height: auto;
         font-size: 12px;
         justify-content: center;
-        text-align: center;
     }
     .ms-contact-infos {
         width: 100%;
@@ -157,24 +159,33 @@ h5 {
     .ms-facebook-png {
         height: 32px;
         width: 32px;
-        top: 25%;
+        top: 18%;
         left: 75%;
     }
     .ms-insta-png {
         height: 32px;
         width: 32px;
-        top: 50%;
+        top: 42%;
         left: 75%;
     }
     .ms-tripadvisor-png {
         height: 32px;
         width: 32px;
-        top: 75%;
+        top: 65%;
         left: 75%;
     }
 
+    .ms-group-adress {
+        padding-right: 32%;
+    }
 
+    .ms-group-contact {
+        padding-right: 30%;
+    }
 
+    .ms-group-time {
+        padding-right: 28%;
+    }
 }
 
 

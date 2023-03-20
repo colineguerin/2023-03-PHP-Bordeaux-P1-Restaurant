@@ -101,23 +101,23 @@ p.ms-foodText, p.ms-conceptText {
     height: 80%;
     display: flex;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.2rem;
     line-height: 35px;
     align-items: center;
-    font-family: Hanuman;
+    font-family: var(--secondary-font);
     padding: 5%;
 
 }
 
 .ms-h2-small-card {
     color: var(--main-text-color);
-    font-family: Advent Pro;
+    font-family: var(--title-font);
     font-style: normal;
 }
 
 .ms-h2-big-card {
     color : var(--secondary-title-color);
-    font-family: Advent Pro;
+    font-family: var(--title-font);
     font-style: normal;
 }
 
@@ -126,10 +126,10 @@ p.ms-foodText, p.ms-conceptText {
     p.ms-foodText, p.ms-conceptText {
         display: flex;
         text-align: center;
-        font-size: 12px;
+        font-size: 0.8rem;
         line-height: 20px;
         align-items: center;
-        font-family: Hanuman;
+        font-family: var(--secondary-font);
         padding: 5%;
 
     }

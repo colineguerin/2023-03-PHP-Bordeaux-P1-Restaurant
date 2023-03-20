@@ -57,13 +57,15 @@ li{
     font-size: 3em;
     color: #102839;
     font-family: var(--title-font);
+    padding-right: 35%;
 }
 
 .sousTitre{
     margin: 0 4% auto auto;
     font-family: var(--secondary-font);
-    font-size: 1em;
+    font-size: 1.3em;
     color: #102839;
+    padding-right: 33%;
 }
 
 .noeud{
