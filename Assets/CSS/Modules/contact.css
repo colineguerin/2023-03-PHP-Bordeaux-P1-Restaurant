@@ -30,7 +30,7 @@ iframe {
 }
 
 h5 {
-    font-family: "Advent Pro";
+    font-family: var(--title-font);
     font-size: 2.5rem;
     color: var(--dark-color);
     font-weight: bold;
@@ -41,8 +41,6 @@ h5 {
 
 .ms-contact-infos {
     text-align: center;
-    position: relative;
-
 }
 
 .ms-group-adress {
