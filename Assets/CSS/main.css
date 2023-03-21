@@ -79,3 +79,18 @@ h2 + * {
     }
 
 }
+
+#ancreCards {
+    margin-bottom: 12vh;
+    height: 0.1vh;
+    z-index: 5;
+}
+
+#ancreMenu {
+    position: fixed;
+    top: 100%;
+}
+
+#ancreBooking {
+    margin-bottom: 4vh;
+}

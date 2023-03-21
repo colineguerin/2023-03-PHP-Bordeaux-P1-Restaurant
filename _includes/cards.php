@@ -12,6 +12,5 @@
         </p>
     </div>
     <img class="ms-image-card2" src="../Assets/Images/cuisine1.png" alt="cuisine">
-
 </section>
 
