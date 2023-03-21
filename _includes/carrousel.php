@@ -7,7 +7,7 @@
     6 radio inputs represent the 6 clickable photos of the carousel, they will be hidden in CSS
 -->
 
-<section class="ms-carousel">
+<section class="ms-carousel transitioned fade-bottom">
 
     <input type="radio" name="slider" id="photo-1" checked>
     <input type="radio" name="slider" id="photo-2">

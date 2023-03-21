@@ -3,7 +3,9 @@
     height: 70vh;
     max-width: 80vw;
     transform-style: preserve-3d;
+
 }
+
 
 input[type=radio] {
     display: none;

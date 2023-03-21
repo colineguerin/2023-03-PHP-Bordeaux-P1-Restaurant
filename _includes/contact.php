@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../Assets/CSS/main.css">
-<section class="ms-contact">
+<section class="ms-contact transitioned fade-still">
     <h2 class="ms-contact-title"><span class="ms-h2-small">Où </span><span class="ms-h2-big">Nous trouver ?</span></h2>
     <div class="ms-map-infos">
         <div id="googleMap" class="w-50">
@@ -24,10 +24,11 @@
             millesabords@wanadoo.fr</p>
             </div>
 
-
-            <a href="#"><img class="ms-facebook-png" src="../Assets/Images/facebook.png" alt="facebook"></a>
-            <a href="#"><img class="ms-insta-png" src="../Assets/Images/insta.png" alt="instagram"></a>
-            <a href="#"><img class="ms-tripadvisor-png" src="../Assets/Images/tripadvisor.png" alt="tripadvisor"></a>
+            <div class="ms-logos-reseaux">
+                 <a href="#"><img class="ms-facebook-png" src="../Assets/Images/facebook.png" alt="facebook"></a>
+                 <a href="#"><img class="ms-insta-png" src="../Assets/Images/insta.png" alt="instagram"></a>
+                <a href="#"><img class="ms-tripadvisor-png" src="../Assets/Images/tripadvisor.png" alt="tripadvisor"></a>
+            </div>
     </div>
 
     </div>
