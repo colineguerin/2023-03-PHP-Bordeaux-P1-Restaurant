@@ -100,6 +100,11 @@ input:focus::placeholder, textarea:focus::placeholder {
     background-color: var(--dark-color);
 }
 
+.ms-plates-mobile {
+    display: none;
+}
+
+
 
 /*
 --- Custom styles on mobiles ---
@@ -137,10 +142,20 @@ input:focus::placeholder, textarea:focus::placeholder {
         grid-column-end: 4;
     }
 
-    .ms-plates {
+    .ms-plates-mobile {
+        display: initial;
         grid-area: plates;
         grid-column-start: 1;
         grid-column-end: 2;
+        background-image: url("/Assets/Images/restaurantIcon.png");
+        background-repeat: no-repeat;
+        background-size:28%;
+        background-position: 50%;
+    }
+
+
+    .ms-plates-pc {
+        display: none;
     }
 
     .ms-date {
@@ -196,6 +211,8 @@ input:focus::placeholder, textarea:focus::placeholder {
         font-size: 1.25rem;
     }
 
+
+
     /*
     Resetting width and defining a different padding on mobiles to have a button which takes whole of the text
      */
@@ -217,6 +234,13 @@ input:focus::placeholder, textarea:focus::placeholder {
         transform: translateX(-55%);
     }
 
+    .material-symbols-outlined {
+        font-variation-settings:
+             'FILL' 0,
+             'wght' 400,
+             'GRAD' 0,
+             'opsz' 24
+    }
 
 }
 
