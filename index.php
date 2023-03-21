@@ -1,6 +1,6 @@
 <?php
 //fichier php du head
-include "_ipullncludes/head.php"
+include "_includes/head.php";
 ?>
 <?php
 //fichier php de la page accueil avec barre de navigation et photo
@@ -28,14 +28,20 @@ include "_includes/footer.php";
 ?>
 
 <link rel="stylesheet" href="Assets/CSS/main.css">
+<script src="./Assets/Javascript/script.js"></script>
 
     <script type="text/javascript">
 
     window.addEventListener('scroll', () => {
 
-        let bateau = document.querySelector(".bateau")
+        let bateau = document.querySelector(".ms-boat")
         let body = document.querySelector('body')
         let tailleBody = body.getBoundingClientRect().height
+        let cardDroitBas = document.querySelector(".ms-card2")
+        let cardGaucheHaut = document.querySelector(".ms-card1")
+        let cardImageHaut = document.querySelector(".ms-image-card1")
+        let cardImageBas = document.querySelector(".ms-image-card2")
+
 
         // on définit la hauteur de chaque section de la page
 
@@ -87,7 +93,7 @@ include "_includes/footer.php";
         let coef4 = rapportForm/rapport4
         let coef5 = rapportContact/rapport5
 
-        let batWidth = document.querySelector(".bateauWidth")
+        let batWidth = document.querySelector(".ms-boatWidth")
         let scrollY = window.scrollY
         let scrollSection
         let minWidth
@@ -95,6 +101,21 @@ include "_includes/footer.php";
         let scrollPercent
         let scrollGlobal
         let maxWidth
+
+        /*if (scrollY > hauteurCards*0.8){
+            cardGaucheHaut.classList.add('Slide')
+        } else if (scrollY > hauteurMenu*0.8){
+            cardGaucheHaut.classList.remove('Slide')
+        }
+
+
+        let animVersDroite = document.;
+        let animVersGauche = document.querySelectorAll('@keyframes translateVersGauche');
+
+        */
+
+
+
 
         if (scrollY < hauteurCards ){
             scrollSection=scrollY
@@ -104,6 +125,10 @@ include "_includes/footer.php";
             maxWidth = rapport1*100
             batWidth.style.maxWidth=`${maxWidth}%`
             batWidth.style.width=`${scrollGlobal}%`
+            cardImageHaut.classList.remove('trans')
+            cardGaucheHaut.classList.remove('trans')
+            cardImageBas.classList.remove('trans')
+            cardDroitBas.classList.remove('trans')
             console.log(1111111111111111111111)
         } else if (scrollY >= hauteurCards && scrollY < hauteurMenu) {
             minWidth = rapport1*100
@@ -114,6 +139,10 @@ include "_includes/footer.php";
             maxWidth = (rapport1+rapport2)*100
             batWidth.style.maxWidth=`${maxWidth}%`
             batWidth.style.width=`${scrollGlobal}%`
+            cardImageHaut.classList.add('trans')
+            cardGaucheHaut.classList.add('trans')
+            cardImageBas.classList.add('trans')
+            cardDroitBas.classList.add('trans')
             console.log(222222222222222222222)
         } else if (scrollY >= hauteurMenu && scrollY < hauteurForm){
             minWidth = (rapport1+rapport2)*100
@@ -122,6 +151,10 @@ include "_includes/footer.php";
             scrollPercent = (scroll*100)/coef3
             scrollGlobal = minWidth+scrollPercent
             maxWidth = (rapport1+rapport2+rapport3) * 100
+            cardImageHaut.classList.remove('trans')
+            cardGaucheHaut.classList.remove('trans')
+            cardImageBas.classList.remove('trans')
+            cardDroitBas.classList.remove('trans')
             batWidth.style.maxWidth=`${maxWidth}%`
             batWidth.style.width=`${scrollGlobal}%`
             console.log(3333333333333333)
@@ -132,6 +165,10 @@ include "_includes/footer.php";
             scrollPercent = (scroll * 100)/coef4
             scrollGlobal = minWidth+scrollPercent
             maxWidth = (rapport1+rapport2+rapport3+rapport4) * 100
+            cardImageHaut.classList.remove('trans')
+            cardGaucheHaut.classList.remove('trans')
+            cardImageBas.classList.remove('trans')
+            cardDroitBas.classList.remove('trans')
             batWidth.style.maxWidth=`${maxWidth}%`
             batWidth.style.width=`${scrollGlobal}%`
             console.log(444444444444)
@@ -141,10 +178,28 @@ include "_includes/footer.php";
             scroll = scrollSection / (body.clientHeight - window.innerHeight)
             scrollPercent = (scroll * 100)/coef5
             scrollGlobal = minWidth+scrollPercent
+            cardImageHaut.classList.remove('trans')
+            cardGaucheHaut.classList.remove('trans')
+            cardImageBas.classList.remove('trans')
+            cardDroitBas.classList.remove('trans')
             batWidth.style.width=`${scrollGlobal}%`
             console.log(555555555555555)
         }
-        //console.log(scrollGlobal)
+
+
 })
+
+
+    window.addEventListener("scroll",()=>{
+const body = document.querySelector("body")
+            let scroll = window.scrollY / (body.clientHeight)
+            let scrollPercent = Math.round(scroll*100)
+        let anim = document.querySelector(".ms-card1.trans")
+        if(scrollPercent >=8){
+          anim.style.transition="5s"
+        }
+        }
+
+    )
 
     </script>

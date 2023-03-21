@@ -1,6 +1,6 @@
 <?php ?>
 
-<section class="ms-menu">
+<section class="ms-menu transitioned fade-left">
 
     <h2 class="ms-menu-section-title"><span class="ms-h2-small">La</span><span class="ms-h2-big"> Carte</span></h2>
     <div class="ms-menu-wrapper">
@@ -60,7 +60,7 @@
             </div>
             </div>
         </div>
-        <div class="ms-next-button-wrapper"  id="ancreBooking">
+        <div class="ms-next-button-wrapper">
             <button id="nextButton" onclick="openNext()"></button>
         </div>
     </div>
