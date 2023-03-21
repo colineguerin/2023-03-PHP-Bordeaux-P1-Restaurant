@@ -125,10 +125,7 @@ include "_includes/footer.php";
             maxWidth = rapport1*100
             batWidth.style.maxWidth=`${maxWidth}%`
             batWidth.style.width=`${scrollGlobal}%`
-            cardImageHaut.classList.remove('trans')
-            cardGaucheHaut.classList.remove('trans')
-            cardImageBas.classList.remove('trans')
-            cardDroitBas.classList.remove('trans')
+
             console.log(1111111111111111111111)
         } else if (scrollY >= hauteurCards && scrollY < hauteurMenu) {
             minWidth = rapport1*100
@@ -139,10 +136,7 @@ include "_includes/footer.php";
             maxWidth = (rapport1+rapport2)*100
             batWidth.style.maxWidth=`${maxWidth}%`
             batWidth.style.width=`${scrollGlobal}%`
-            cardImageHaut.classList.add('trans')
-            cardGaucheHaut.classList.add('trans')
-            cardImageBas.classList.add('trans')
-            cardDroitBas.classList.add('trans')
+
             console.log(222222222222222222222)
         } else if (scrollY >= hauteurMenu && scrollY < hauteurForm){
             minWidth = (rapport1+rapport2)*100
@@ -151,10 +145,7 @@ include "_includes/footer.php";
             scrollPercent = (scroll*100)/coef3
             scrollGlobal = minWidth+scrollPercent
             maxWidth = (rapport1+rapport2+rapport3) * 100
-            cardImageHaut.classList.remove('trans')
-            cardGaucheHaut.classList.remove('trans')
-            cardImageBas.classList.remove('trans')
-            cardDroitBas.classList.remove('trans')
+
             batWidth.style.maxWidth=`${maxWidth}%`
             batWidth.style.width=`${scrollGlobal}%`
             console.log(3333333333333333)
@@ -165,10 +156,7 @@ include "_includes/footer.php";
             scrollPercent = (scroll * 100)/coef4
             scrollGlobal = minWidth+scrollPercent
             maxWidth = (rapport1+rapport2+rapport3+rapport4) * 100
-            cardImageHaut.classList.remove('trans')
-            cardGaucheHaut.classList.remove('trans')
-            cardImageBas.classList.remove('trans')
-            cardDroitBas.classList.remove('trans')
+
             batWidth.style.maxWidth=`${maxWidth}%`
             batWidth.style.width=`${scrollGlobal}%`
             console.log(444444444444)
@@ -178,10 +166,7 @@ include "_includes/footer.php";
             scroll = scrollSection / (body.clientHeight - window.innerHeight)
             scrollPercent = (scroll * 100)/coef5
             scrollGlobal = minWidth+scrollPercent
-            cardImageHaut.classList.remove('trans')
-            cardGaucheHaut.classList.remove('trans')
-            cardImageBas.classList.remove('trans')
-            cardDroitBas.classList.remove('trans')
+
             batWidth.style.width=`${scrollGlobal}%`
             console.log(555555555555555)
         }
@@ -191,13 +176,27 @@ include "_includes/footer.php";
 
 
     window.addEventListener("scroll",()=>{
+            let cardDroitBas = document.querySelector(".ms-card2")
+            let cardGaucheHaut = document.querySelector(".ms-card1")
+            let cardImageHaut = document.querySelector(".ms-image-card1")
+            let cardImageBas = document.querySelector(".ms-image-card2")
 const body = document.querySelector("body")
             let scroll = window.scrollY / (body.clientHeight)
             let scrollPercent = Math.round(scroll*100)
-        let anim = document.querySelector(".ms-card1.trans")
-        if(scrollPercent >=8){
-          anim.style.transition="5s"
+        if(scrollPercent >=8 && scrollPercent < 36  ){
+            cardImageHaut.classList.add('trans')
+            cardGaucheHaut.classList.add('trans')
+            cardImageBas.classList.add('trans')
+            cardDroitBas.classList.add('trans')
         }
+
+        else if ( scrollPercent <= 7 || scrollPercent >= 38){
+                cardImageHaut.classList.remove('trans')
+                cardGaucheHaut.classList.remove('trans')
+                cardImageBas.classList.remove('trans')
+                cardDroitBas.classList.remove('trans')
+            }
+
         }
 
     )
