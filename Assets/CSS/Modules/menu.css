@@ -70,8 +70,6 @@
     font-family: var(--secondary-font);
     max-width: 650px;
     background-color: var(--main-text-color);
-    display: flex;
-    justify-content: center;
     margin: 0 auto;
     padding: 48px 24px;
     border-bottom-left-radius: 8px;
@@ -98,6 +96,7 @@
 }
 
 /* Arrow previous and next buttons */
+
 #previousButton {
     width: 32px;
     height: 48px;
@@ -160,4 +159,3 @@
         display: none;
     }
 }
-
