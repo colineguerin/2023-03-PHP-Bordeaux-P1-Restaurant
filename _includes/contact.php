@@ -24,10 +24,11 @@
             millesabords@wanadoo.fr</p>
             </div>
 
-
-            <a href="#"><img class="ms-facebook-png" src="../Assets/Images/facebook.png" alt="facebook"></a>
-            <a href="#"><img class="ms-insta-png" src="../Assets/Images/insta.png" alt="instagram"></a>
-            <a href="#"><img class="ms-tripadvisor-png" src="../Assets/Images/tripadvisor.png" alt="tripadvisor"></a>
+            <div class="ms-logos-reseaux">
+                 <a href="#"><img class="ms-facebook-png" src="../Assets/Images/facebook.png" alt="facebook"></a>
+                 <a href="#"><img class="ms-insta-png" src="../Assets/Images/insta.png" alt="instagram"></a>
+                <a href="#"><img class="ms-tripadvisor-png" src="../Assets/Images/tripadvisor.png" alt="tripadvisor"></a>
+            </div>
     </div>
 
     </div>
