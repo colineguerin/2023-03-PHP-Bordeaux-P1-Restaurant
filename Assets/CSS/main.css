@@ -56,7 +56,6 @@ body {
     font-size: 3.75rem;
 }
 
-
 section {
     margin-bottom: 15vh;
 }
@@ -73,11 +72,24 @@ h2 + * {
     .ms-h2-big {
         font-size: 2rem;
     }
-
     section {
         margin-bottom: 5vh;
     }
+}
 
+#ancreCards {
+    margin-bottom: 12vh;
+    height: 0.1vh;
+    z-index: 5;
+}
+
+#ancreMenu {
+    position: fixed;
+    top: 100%;
+}
+
+#ancreBooking {
+    margin-bottom: 4vh;
 }
 
 /* WIP transitions on carousel and menu */
@@ -117,29 +129,7 @@ h2 + * {
 .active.fade-still {
     animation: fade-still 1s ease-in;
 }
-/*
-.active.ms-card1-trans {
-    animation: translateVersDroite 1s ease-in;
-    animation-fill-mode: forwards;
-}
 
-.active.ms-image-card1-trans {
-    animation: pauseTranslate 1s, translateVersGauche 1s ease-in;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-}
-
-.active.ms-card2-trans {
-    animation: translateVersGauche 1s ease-in;
-    animation-fill-mode: forwards;
-}
-
-.active.ms-image-card2-trans {
-    animation: translateVersDroite 1s ease-in;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-}
-*/
 @keyframes fade-bottom {
     0% {
         transform: translateY(15vh);

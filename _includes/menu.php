@@ -64,6 +64,7 @@
             <button id="nextButton" onclick="openNext()"></button>
         </div>
     </div>
+    <div id="ancreBooking"></div>
     <div class="ms-menu-below">
         <img src="../Assets/Images/noeud.png" class="ms-knot-transition" alt="image d'un noeud">
     </div>
