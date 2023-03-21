@@ -1,6 +1,6 @@
 <?php
 //fichier php du head
-include "_includes/head.php"
+include "_ipullncludes/head.php"
 ?>
 <?php
 //fichier php de la page accueil avec barre de navigation et photo
