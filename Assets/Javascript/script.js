@@ -113,7 +113,7 @@ window.addEventListener('scroll', () => {
 
     // on définit la proportion de chaque segment à parcourir
 
-    let rapport1 = 0.22
+    let rapport1 = 0.23
     let rapport2 = 0.2
     let rapport3 = 0.197
     let rapport4 = 0.205
