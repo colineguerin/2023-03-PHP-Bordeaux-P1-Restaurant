@@ -84,7 +84,7 @@ h5 {
 .ms-logos-reseaux {
     display:flex;
     justify-content: space-around;
-    padding: 0 24% 0 24%;
+    padding: 0 24% 5% 24%;
 }
 #googleMap {
     padding-bottom: 2%;
