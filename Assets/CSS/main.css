@@ -44,14 +44,14 @@ body {
 
 .ms-h2-small {
     color: var(--dark-color);
-    font-family: Advent Pro;
+    font-family: var(--title-font);
     font-style: normal;
     font-size: 2.5rem;
 }
 
 .ms-h2-big {
     color : var(--secondary-title-color);
-    font-family: Advent Pro;
+    font-family: var(--title-font);
     font-style: normal;
     font-size: 3.75rem;
 }
