@@ -80,9 +80,9 @@ window.addEventListener('scroll', () => {
     // on définit la hauteur de chaque section de la page
 
     let tailleHeader = document.querySelector('.header').getBoundingClientRect().height*1.1
-    let tailleCards = document.querySelector('.ms-cards').getBoundingClientRect().height*1.125
+    let tailleCards = document.querySelector('.ms-cards').getBoundingClientRect().height
     let tailleCarousel = document.querySelector('.ms-carousel').getBoundingClientRect().height
-    let tailleMenu = document.querySelector('.ms-menu').getBoundingClientRect().height
+    let tailleMenu = document.querySelector('.ms-menu').getBoundingClientRect().height*0.8
     let tailleForm = document.querySelector('.ms-booking').getBoundingClientRect().height
     let tailleContact = tailleBody-(tailleHeader+tailleCards+tailleMenu+tailleCarousel+tailleForm)
 
@@ -105,18 +105,18 @@ window.addEventListener('scroll', () => {
     rapportForm = 0.0972
     rapportContact = 0.1699*/
 
-    rapportHeader = 0.17
+    rapportHeader = 0.15
     rapportCards = 0.39
-    rapportMenu = 0.19
-    rapportForm = 0.13
-    rapportContact = 0.10
+    rapportMenu = 0.17
+    rapportForm = 0.12
+    rapportContact = 0.01
 
     // on définit la proportion de chaque segment à parcourir
 
-    let rapport1 = 0.225
-    let rapport2 = 0.197
+    let rapport1 = 0.22
+    let rapport2 = 0.2
     let rapport3 = 0.197
-    let rapport4 = 0.207
+    let rapport4 = 0.205
     let rapport5 = 0.15
 
     // on calcule le coef entre la proportion de la section et la proportion du segment à parcourir
@@ -137,10 +137,11 @@ window.addEventListener('scroll', () => {
     let maxWidth
 
     if (scrollY < hauteurCards){
+        minWidth = 0
         scrollSection=scrollY
         scroll = scrollSection / (body.clientHeight)
         scrollPercent = (scroll*100)/coef1
-        scrollGlobal=scrollPercent
+        scrollGlobal = minWidth+scrollPercent
         maxWidth = rapport1*100
         batWidth.style.maxWidth=`${maxWidth}%`
         batWidth.style.width=`${scrollGlobal}%`
