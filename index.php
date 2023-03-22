@@ -10,7 +10,10 @@
 </head>
 
 <body>
+
 <?php
+//session_start();
+
 //fichier php de la page accueil avec barre de navigation et photo
 include "_includes/header.php";
 
@@ -26,16 +29,25 @@ include "_includes/menu.php";
 //fichier php du formulaire de contact
 include "_includes/form.php";
 
+//fichier php de traitement du formulaire
+/*if (isset($_POST['ms-form-name'])) {
+    include "_includes/booking.php";
+}*/
+
+
 //fichier php de la partie contact avec map + téléphone + réseaux
 include "_includes/contact.php";
 
 //fichier php du footer avec liens obligatoires
 include "_includes/footer.php";
 
-
+//session_unset();
+//session_destroy();
 ?>
 </body>
 
+
 <script type="text/javascript" src="Assets/Javascript/script.js"></script>
+
 
 </html>
