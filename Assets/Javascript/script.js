@@ -193,12 +193,12 @@ window.addEventListener("scroll",()=> {
     const body = document.querySelector("body")
     let scroll = window.scrollY / (body.clientHeight)
     let scrollPercent = Math.round(scroll * 100)
-    if (scrollPercent >= 8 && scrollPercent < 36) {
+    if (scrollPercent >= 3 && scrollPercent < 36) {
         cardImageHaut.classList.add('trans')
         cardGaucheHaut.classList.add('trans')
         cardImageBas.classList.add('trans')
         cardDroitBas.classList.add('trans')
-    } else if (scrollPercent <= 7 || scrollPercent >= 38) {
+    } else if (scrollPercent <= 2 || scrollPercent >= 38) {
         cardImageHaut.classList.remove('trans')
         cardGaucheHaut.classList.remove('trans')
         cardImageBas.classList.remove('trans')
