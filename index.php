@@ -1,4 +1,7 @@
 <?php
+//session_start();
+
+
 //fichier php du head
 include "_includes/head.php";
 ?>
@@ -18,17 +21,26 @@ include "_includes/menu.php";
 //fichier php du formulaire de contact
 include "_includes/form.php";
 
+//fichier php de traitement du formulaire
+/*if (isset($_POST['ms-form-name'])) {
+    include "_includes/booking.php";
+}*/
+
+
 //fichier php de la partie contact avec map + téléphone + réseaux
 include "_includes/contact.php";
 
 //fichier php du footer avec liens obligatoires
 include "_includes/footer.php";
 
-
+//session_unset();
+//session_destroy();
 ?>
 
 <link rel="stylesheet" href="Assets/CSS/main.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 <script src="./Assets/Javascript/script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <script type="text/javascript">
 
