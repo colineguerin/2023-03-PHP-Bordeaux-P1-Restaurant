@@ -36,5 +36,4 @@
             <img src="../Assets/Images/fish-2105233_1920.jpg" alt="Truite aux 100 herbes" id="truite">
         </label>
     </div>
-    <div id="ancreMenu"></div>
 </section>

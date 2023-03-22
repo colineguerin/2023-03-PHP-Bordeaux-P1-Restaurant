@@ -1,5 +1,5 @@
 <!-- <link rel="stylesheet" href="../assets/css/main.css"> -->
-<section class="ms-cards">
+<section class="ms-cards" id="ancreCards">
     <div class="ms-card1 ms-card1.trans">
         <h3 class="ms-theConcept"><span class="ms-h2-small-card">Le </span><span class="ms-h2-big-card">Concept</span></h3>
         <p class="ms-conceptText">Depuis plus de vingt ans, le Mille Sabords sillone les eaux tumultueuses de la Garonne à la recherche des meilleurs produits pour régaler vos papilles. Aujourd'hui, nous avons jeté l'ancre au port de Bordeaux, mais qui sait ? Demain, nous serons peut-être à Agen. Venez vite nous rendre visite avant que le Mille Sabords ne largue les amarres !</p>

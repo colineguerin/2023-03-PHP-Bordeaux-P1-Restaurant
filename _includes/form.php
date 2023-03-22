@@ -1,13 +1,4 @@
-<?php
-
-    /*
-     * php closed to start html
-     */
-
-?>
-
 <link rel="stylesheet" href="../Assets/CSS/main.css">
-
 <section class="ms-booking transitioned fade-right" id="ancreBooking">
 
     <h2 class="ms-title-section"><span class="ms-h2-small">Pour</span><span class="ms-h2-big"> Réserver</span></h2>
@@ -35,6 +26,6 @@
             <option value="21:00">
         </datalist>
         <textarea class="ms-demands" name="ms-demands" rows="5" cols="50" placeholder="Demandes particulières"></textarea>
-        <input type="submit" class="ms-button" value="Réserver" id="ancreContact">
+        <input type="submit" class="ms-button" value="Réserver">
     </form>
 </section>
