@@ -203,12 +203,25 @@ li{
     }
     .ms-menu-button{
         display: flex;
-        height: 80%;
+        height: 40%;
         margin: auto 2% auto 2%;
     }
     .titre {
         margin: 15% auto 0 auto;
     }
+
+    .noeud{
+        height: 5vh;
+        padding: 0;
+        justify-content: center;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    #ancreLogo {
+        margin-bottom: 0;
+    }
+
 }
 
 /*<script type="text/javascript" src="./Assets/Javascript/head.js"></script>
