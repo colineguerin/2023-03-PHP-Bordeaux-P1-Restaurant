@@ -43,7 +43,7 @@
                 <p class="ms-dish-price">23 €</p>
             </div>
                 <div class="ms-menu-type" id="dessertsContent">
-                <p class="ms-dish-label">Sélection de fromages du chef</p>
+                <p class="ms-dish-label">Sélection saisonnière de fromages du chef et son sabre de samuraï</p>
                 <p class="ms-dish-price">10 €</p>
                     <img class="ms-dish-transition" src="../Assets/Images/noeud.png" alt="noeud">
                 <p class="ms-dish-label">Fraîcheur de fruits rouges au sureau, glace basilic et copeaux de chocolat noir</p>
