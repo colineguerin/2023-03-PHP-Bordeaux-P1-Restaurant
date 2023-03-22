@@ -20,10 +20,10 @@
     </nav>
         <aside class="ms-menu-toggle">
             <ul>
-                <li class="ms-nav-concept"><a class="surlign" href="#ancreCards"">Concept</a></li>
-                <li class="ms-nav-carte"><a class="surlign" href="#ancreMenu">Carte</a></li>
-                <li class="ms-nav-reserver"><a class="surlign" href="#ancreBooking">Réserver</a></li>
-                <li class="ms-nav-contact"><a class="surlign" href="#ancreContact">Contact</a></li>
+                <li class="ms-nav-concept"><a class="surlign" onclick="toggleNavItem()" href="#ancreCards">Concept</a></li>
+                <li class="ms-nav-carte"><a class="surlign" onclick="toggleNavItem()" href="#ancreMenu">Carte</a></li>
+                <li class="ms-nav-reserver"><a class="surlign" onclick="toggleNavItem()" href="#ancreBooking">Réserver</a></li>
+                <li class="ms-nav-contact"><a class="surlign" onclick="toggleNavItem()" href="#ancreContact">Contact</a></li>
             </ul>
             <div>05 57 05 05 57</div>
         </aside>

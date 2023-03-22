@@ -208,7 +208,7 @@ window.addEventListener("scroll",()=> {
 /* Menu burger mobile version */
 
 let toggleNavStatus = false;
-let toggleNav = function (){
+let toggleNav = function() {
     let getMenuToggle = document.querySelector('.ms-menu-toggle');
     let getMenuToggleUl = document.querySelector('.ms-menu-toggle ul');
     let getMenuToggleDiv = document.querySelector('.ms-menu-toggle div');
@@ -230,6 +230,19 @@ let toggleNav = function (){
         buttonLogo.style.height="80%";
         toggleNavStatus = false;
     }
+}
+
+let toggleNavItem = function() {
+    let getMenuToggle = document.querySelector('.ms-menu-toggle');
+    let getMenuToggleUl = document.querySelector('.ms-menu-toggle ul');
+    let getMenuToggleDiv = document.querySelector('.ms-menu-toggle div');
+    let buttonLogo = document.querySelector('.ms-menu-button');
+    getMenuToggleUl.style.opacity="0";
+    getMenuToggleDiv.style.opacity="0";
+    getMenuToggle.style.width="0";
+    buttonLogo.style.backgroundImage="url(../Assets/Images/menu.png)";
+    buttonLogo.style.height="80%";
+    toggleNavStatus = false;
 }
 
 /* Animation carte pour passer d'une section à l'autre */

@@ -85,19 +85,6 @@ h2 + * {
     padding-top: 6em;
 }
 
-@media screen and (max-width: 400px) {
-    .ms-h2-small {
-        font-size: 1.5rem;
-    }
-    .ms-h2-big {
-        font-size: 2rem;
-    }
-    section {
-        margin-bottom: 5vh;
-    }
-}
-
-
 .transitioned {
     opacity: 0;
 }
@@ -161,6 +148,28 @@ h2 + * {
     }
     100% {
         opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ms-h2-small {
+        font-size: 1.5rem;
+    }
+    .ms-h2-big {
+        font-size: 2rem;
+    }
+    section {
+        margin-bottom: 5vh;
+    }
+
+    #ancreBooking, #ancreMenu {
+        margin-top: -3em;
+        padding-top: 3em;
+    }
+
+    #ancreContact, #ancreCards {
+        margin-top: -2em;
+        padding-top: 2em;
     }
 }
 
