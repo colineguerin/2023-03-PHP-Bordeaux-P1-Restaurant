@@ -113,55 +113,55 @@ window.addEventListener('scroll', () => {
     }
 })
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll",()=> {
     let cardDroitBas = document.querySelector(".ms-card2")
     let cardGaucheHaut = document.querySelector(".ms-card1")
     let cardImageHaut = document.querySelector(".ms-image-card1")
     let cardImageBas = document.querySelector(".ms-image-card2")
     const body = document.querySelector("body")
     let scroll = window.scrollY / (body.clientHeight)
-    let scrollPercent = Math.round(scroll*100)
+    let scrollPercent = Math.round(scroll * 100)
     let anim = document.querySelector(".ms-card1.trans")
-    if(scrollPercent >=8){
-        anim.style.transition="5s"
-        if(scrollPercent >=8 && scrollPercent < 36  ){
+
+
+          if (scrollPercent >= 8 && scrollPercent < 36) {
             cardImageHaut.classList.add('trans')
             cardGaucheHaut.classList.add('trans')
             cardImageBas.classList.add('trans')
             cardDroitBas.classList.add('trans')
-        }
-        else if ( scrollPercent <= 7 || scrollPercent >= 38){
+        } else if (scrollPercent <= 7 || scrollPercent >= 38) {
             cardImageHaut.classList.remove('trans')
             cardGaucheHaut.classList.remove('trans')
             cardImageBas.classList.remove('trans')
             cardDroitBas.classList.remove('trans')
         }
-    }
-)
 
-let toggleNavStatus = false;
-let toggleNav = function (){
-    let getMenuToggle = document.querySelector('.ms-menu-toggle');
-    let getMenuToggleUl = document.querySelector('.ms-menu-toggle ul');
-    let getMenuToggleDiv = document.querySelector('.ms-menu-toggle div');
-    let buttonLogo = document.querySelector('.ms-menu-button');
 
-    if(toggleNavStatus === false) {
-        getMenuToggle.style.width="60%";
-        getMenuToggleUl.style.opacity="1";
-        getMenuToggleDiv.style.opacity="1";
-        buttonLogo.style.backgroundImage="url(../Assets/Images/croix.png)";
-        buttonLogo.style.height="50%";
-        buttonLogo.style.backgroundSize="contain";
-        toggleNavStatus = true;
-    } else if (toggleNavStatus === true) {
-        getMenuToggleUl.style.opacity="0";
-        getMenuToggleDiv.style.opacity="0";
-        getMenuToggle.style.width="0";
-        buttonLogo.style.backgroundImage="url(../Assets/Images/menu.png)";
-        buttonLogo.style.height="80%";
-        toggleNavStatus = false;
+
+    let toggleNavStatus = false;
+    let toggleNav = function () {
+        let getMenuToggle = document.querySelector('.ms-menu-toggle');
+        let getMenuToggleUl = document.querySelector('.ms-menu-toggle ul');
+        let getMenuToggleDiv = document.querySelector('.ms-menu-toggle div');
+        let buttonLogo = document.querySelector('.ms-menu-button');
+
+        if (toggleNavStatus === false) {
+            getMenuToggle.style.width = "60%";
+            getMenuToggleUl.style.opacity = "1";
+            getMenuToggleDiv.style.opacity = "1";
+            buttonLogo.style.backgroundImage = "url(../Assets/Images/croix.png)";
+            buttonLogo.style.height = "50%";
+            buttonLogo.style.backgroundSize = "contain";
+            toggleNavStatus = true;
+        } else if (toggleNavStatus === true) {
+            getMenuToggleUl.style.opacity = "0";
+            getMenuToggleDiv.style.opacity = "0";
+            getMenuToggle.style.width = "0";
+            buttonLogo.style.backgroundImage = "url(../Assets/Images/menu.png)";
+            buttonLogo.style.height = "80%";
+            toggleNavStatus = false;
+        }
     }
-}
+})
 
 
