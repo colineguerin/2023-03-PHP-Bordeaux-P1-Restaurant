@@ -82,7 +82,7 @@ window.addEventListener('scroll', () => {
     let tailleHeader = document.querySelector('.header').getBoundingClientRect().height*1.1
     let tailleCards = document.querySelector('.ms-cards').getBoundingClientRect().height*1.125
     let tailleCarousel = document.querySelector('.ms-carousel').getBoundingClientRect().height
-    let tailleMenu = document.querySelector('.ms-menu').getBoundingClientRect().height*0.98
+    let tailleMenu = document.querySelector('.ms-menu').getBoundingClientRect().height
     let tailleForm = document.querySelector('.ms-booking').getBoundingClientRect().height
     let tailleContact = tailleBody-(tailleHeader+tailleCards+tailleMenu+tailleCarousel+tailleForm)
 
@@ -105,18 +105,18 @@ window.addEventListener('scroll', () => {
     rapportForm = 0.0972
     rapportContact = 0.1699*/
 
-    rapportHeader = 0.15
+    rapportHeader = 0.17
     rapportCards = 0.39
-    rapportMenu = 0.15
+    rapportMenu = 0.19
     rapportForm = 0.13
-    rapportContact = 0.15
+    rapportContact = 0.10
 
     // on définit la proportion de chaque segment à parcourir
 
     let rapport1 = 0.225
-    let rapport2 = 0.2
-    let rapport3 = 0.15
-    let rapport4 = 0.22
+    let rapport2 = 0.197
+    let rapport3 = 0.197
+    let rapport4 = 0.207
     let rapport5 = 0.15
 
     // on calcule le coef entre la proportion de la section et la proportion du segment à parcourir
@@ -146,7 +146,7 @@ window.addEventListener('scroll', () => {
         batWidth.style.width=`${scrollGlobal}%`
         console.log(1111111111111111111111)
     } else if (scrollY >= hauteurCards && scrollY < hauteurMenu) {
-        minWidth = rapport1*88
+        minWidth = rapport1*100
         scrollSection = (scrollY - hauteurCards)
         scroll = scrollSection / (body.clientHeight - window.innerHeight)
         scrollPercent = (scroll*100)/coef2
@@ -156,7 +156,7 @@ window.addEventListener('scroll', () => {
         batWidth.style.width=`${scrollGlobal}%`
         console.log(222222222222222222222)
     } else if (scrollY >= hauteurMenu && scrollY < hauteurForm){
-        minWidth = (rapport1+rapport2)*92
+        minWidth = (rapport1+rapport2)*100
         scrollSection = (scrollY - hauteurMenu)
         scroll = scrollSection / (body.clientHeight - window.innerHeight)
         scrollPercent = (scroll*100)/coef3

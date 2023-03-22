@@ -38,8 +38,6 @@
         <h1 class="titreHidden">Un voyage culinaire</h1>
         <h2 class="sousTitre"> Fruits de mers & poissons frais</h2>
     </div>
-    <!---------------------- séparation avec noeud marin ------------------------------->
-    <img class="noeud" src="../Assets/Images/noeud.png" alt="noeud">
     <!---------------------- fin du header navigation ------------------------------->
     </section>
     </body>

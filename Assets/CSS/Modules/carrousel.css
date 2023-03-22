@@ -105,7 +105,7 @@ Only on Desktops
 @media screen and (min-width: 401px) {
 
     .ms-carousel{
-        margin: 15vh auto;
+        margin: 5vh auto 3vh auto;
     }
 
     /*
@@ -168,7 +168,7 @@ Not displaying too many photos on phones, when photo 1 is in front, photos 3, 4,
      */
     .ms-carousel{
         height: 40vh;
-        margin: auto auto 5vh auto;
+        margin: auto auto 3vh auto;
     }
 
     /*

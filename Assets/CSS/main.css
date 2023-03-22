@@ -57,7 +57,7 @@ body {
 }
 
 section {
-    margin-bottom: 15vh;
+    margin-bottom: 5vh
 }
 
 
@@ -81,8 +81,8 @@ h2 + * {
 }
 
 #ancreContact {
-    margin-top: -7em;
-    padding-top: 7em;
+    margin-top: -6em;
+    padding-top: 6em;
 }
 
 @media screen and (max-width: 400px) {
@@ -94,9 +94,6 @@ h2 + * {
     }
     section {
         margin-bottom: 5vh;
-    }
-    #ancreCards{
-        margin-bottom: 0;
     }
 }
 
