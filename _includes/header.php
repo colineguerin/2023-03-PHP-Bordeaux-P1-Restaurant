@@ -41,7 +41,6 @@
     <!---------------------- séparation avec noeud marin ------------------------------->
     <img class="noeud" src="../Assets/Images/noeud.png" alt="noeud">
     <!---------------------- fin du header navigation ------------------------------->
-        <div id="ancreCards"></div>
     </section>
     </body>
     </html>

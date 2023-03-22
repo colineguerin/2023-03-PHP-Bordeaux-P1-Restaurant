@@ -66,18 +66,23 @@ h2 + * {
 }
 
 #ancreCards {
-    margin-bottom: 12vh;
-    height: 0.1vh;
-    z-index: 5;
+    margin-top: -7em;
+    padding-top: 7em;
 }
 
 #ancreMenu {
-    position: fixed;
-    top: 100%;
+    margin-top: -7em;
+    padding-top: 7em;
 }
 
 #ancreBooking {
-    margin-bottom: 4vh;
+    margin-top: -7em;
+    padding-top: 7em;
+}
+
+#ancreContact {
+    margin-top: -7em;
+    padding-top: 7em;
 }
 
 @media screen and (max-width: 400px) {

@@ -1,7 +1,4 @@
-<?php ?>
-
-<section class="ms-menu transitioned fade-left">
-
+<section class="ms-menu transitioned fade-left" id="ancreMenu">
     <h2 class="ms-menu-section-title"><span class="ms-h2-small">La</span><span class="ms-h2-big"> Carte</span></h2>
     <div class="ms-menu-wrapper">
         <div class="ms-button-wrapper">
@@ -64,7 +61,6 @@
             <button id="nextButton" onclick="openNext()"></button>
         </div>
     </div>
-    <div id="ancreBooking"></div>
     <div class="ms-menu-below">
         <img src="../Assets/Images/noeud.png" class="ms-knot-transition" alt="image d'un noeud">
     </div>

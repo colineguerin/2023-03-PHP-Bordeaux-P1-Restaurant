@@ -212,8 +212,6 @@ Photos to the left
     #photo-6:checked ~ .ms-carousel-photos #meal-2, #photo-6:checked ~ .ms-carousel-photos #meal-4 {
         visibility: hidden;
     }
-
-
 }
 
 

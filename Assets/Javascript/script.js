@@ -105,7 +105,7 @@ window.addEventListener('scroll', () => {
     rapportForm = 0.0972
     rapportContact = 0.1699*/
 
-    rapportHeader = 0.22
+    rapportHeader = 0.15
     rapportCards = 0.39
     rapportMenu = 0.15
     rapportForm = 0.13
@@ -113,7 +113,7 @@ window.addEventListener('scroll', () => {
 
     // on définit la proportion de chaque segment à parcourir
 
-    let rapport1 = 0.25
+    let rapport1 = 0.225
     let rapport2 = 0.2
     let rapport3 = 0.15
     let rapport4 = 0.22
