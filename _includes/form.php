@@ -20,7 +20,7 @@
     <form action="" method="post" class="ms-form-booking">
         <input type="text" class="ms-name" name="ms-form-name" placeholder="Nom ou société *" required>
         <input type="tel" class="ms-phone" name="ms-form-phone" placeholder="Téléphone *" required>
-        <input type="email" class="ms-mail" name="ms-form-mail" placeholder="E-mail" required>
+        <input type="email" class="ms-mail" name="ms-form-mail" placeholder="E-mail *" required>
         <input type="number" class="ms-plates-pc" name="ms-form-plates-pc" placeholder="Nombre de couverts *" min="1" max="15" required>
         <input type="number" class="ms-plates-mobile" name="ms-form-plates-mobile"  min="1" max="15">
         <input type="date" class="ms-date" name="ms-form-date" value="<?= date("Y-m-d");?>" min="<?= date("Y-m-d");?>" >
