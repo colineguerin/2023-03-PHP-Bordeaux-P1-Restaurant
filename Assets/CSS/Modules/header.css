@@ -98,7 +98,6 @@ li{
     display: none;
 }
 
-
 .sousTitre{
     margin: 0 auto auto auto;
     font-family: var(--secondary-font);
@@ -109,7 +108,7 @@ li{
 .noeud{
     margin: 6vh auto;
     display: flex;
-    height: 10vh;
+    height: 7vh;
 }
 
 .ms-boatWidthTotal{
@@ -124,7 +123,7 @@ li{
 .ms-boatWidth{
     /*background-color: red;*/
     height: 6vh;
-    min-width: 10%;
+    min-width: 12%;
     max-width: 100%;
     z-index: 5;
 }

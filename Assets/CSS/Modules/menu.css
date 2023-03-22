@@ -1,5 +1,5 @@
 .ms-menu {
-    margin-bottom: 0;
+    margin-bottom:3vh;
     display: grid;
     justify-content: center;
     text-align: center;
@@ -64,7 +64,6 @@
     display: none;
 }
 
-
 /* Menu content with list of dishes */
 .ms-menu-content {
     font-family: var(--secondary-font);
@@ -115,18 +114,6 @@
     border: 0;
 }
 
-/* Transition before next section */
-.ms-menu-below {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-}
-
-.ms-knot-transition {
-    height: 7vh;
-}
-
 /* Mobile version */
 
 @media screen and (max-width: 400px) {
@@ -161,5 +148,9 @@
 
     #previousButton, #nextButton {
         display: none;
+    }
+
+    .ms-menu-wrapper {
+        margin-top: 1vh;
     }
 }

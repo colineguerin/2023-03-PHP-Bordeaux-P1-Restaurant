@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../Assets/CSS/main.css">
-<section class="ms-contact transitioned fade-still" id="ancreContact">
+<div id="ancreContact"></div>
+<section class="ms-contact transitioned fade-still">
     <h2 class="ms-contact-title"><span class="ms-h2-small">Où </span><span class="ms-h2-big">Nous trouver ?</span></h2>
     <div class="ms-map-infos">
         <div id="googleMap" class="w-50">

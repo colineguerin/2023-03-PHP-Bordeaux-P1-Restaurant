@@ -2,7 +2,6 @@
 
 
 ?>
-
 <link rel="stylesheet" href="../Assets/CSS/main.css">
 <section class="ms-booking transitioned fade-right" id="ancreBooking">
 

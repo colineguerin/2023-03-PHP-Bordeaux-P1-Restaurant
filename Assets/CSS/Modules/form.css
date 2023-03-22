@@ -6,7 +6,7 @@ Defining the section .ms-form as grid and placing it in the center of the page
     display: grid;
     justify-content: center;
     text-align: center;
-    margin: 15vh auto;
+    margin: 5vh auto;
     width: 47vw;
 }
 
