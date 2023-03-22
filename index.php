@@ -39,4 +39,3 @@ include "_includes/footer.php";
 <script type="text/javascript" src="Assets/Javascript/script.js"></script>
 
 </html>
-

@@ -1,5 +1,6 @@
 .ms-contact {
     background-color: var(--main-text-color);
+    margin-bottom: 0;
 }
 
 .ms-contact-title {

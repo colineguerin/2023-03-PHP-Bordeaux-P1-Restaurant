@@ -15,7 +15,7 @@
             <li class="ms-nav-reserver"><a class="surlign" href="#ancreBooking">Réserver</a></li>
             <li class="ms-nav-contact"><a class="surlign" href="#ancreContact">Contact</a></li>
         </ul>
-        <a class="ms-bookingHidden" href="#ancreBooking">Réserver</a>
+        <a class="ms-bookingHidden">Mille Sabords</a>
         <a href="#ancreLogo"><img class="ms-logoHidden" src="../Assets/Images/logotexte.png" alt="logo"></a>
     </nav>
         <aside class="ms-menu-toggle">
@@ -35,6 +35,7 @@
     <!---------------------- photo d'accueil et titre ------------------------------->
     <div class="accueil">
         <h1 class="titre">Mille Sabords</h1>
+        <h1 class="titreHidden">Un voyage culinaire</h1>
         <h2 class="sousTitre"> Fruits de mers & poissons frais</h2>
     </div>
     <!---------------------- séparation avec noeud marin ------------------------------->
