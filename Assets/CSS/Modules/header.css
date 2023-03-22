@@ -94,6 +94,11 @@ li{
     font-family: var(--title-font);
 }
 
+.titreHidden{
+    display: none;
+}
+
+
 .sousTitre{
     margin: 0 auto auto auto;
     font-family: var(--secondary-font);
@@ -125,7 +130,7 @@ li{
 }
 
 .ms-boat {
-    height: 6vh;
+    height: 2vw;
     animation: bateauZoom 1.5s infinite;
     z-index: 5;
     }
@@ -207,7 +212,15 @@ li{
         margin: auto 2% auto 2%;
     }
     .titre {
+        display: none;
+    }
+
+    .titreHidden {
+        display: flex;
         margin: 15% auto 0 auto;
+        font-size: 3em;
+        color: #102839;
+        font-family: var(--title-font);
     }
 
     .noeud{

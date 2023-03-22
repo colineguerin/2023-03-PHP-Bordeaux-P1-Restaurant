@@ -176,16 +176,16 @@ include "_includes/footer.php";
                 getMenuToggle.style.width="60%";
                 getMenuToggleUl.style.opacity="1";
                 getMenuToggleDiv.style.opacity="1";
-                buttonLogo.style.backgroundImage="url(Assets/Images/menu.png)";
-                buttonLogo.style.height="60%";
+                buttonLogo.style.backgroundImage="url(Assets/Images/croix.png)";
+                buttonLogo.style.height="50%";
                 buttonLogo.style.backgroundSize="contain";
                 toggleNavStatus = true;
             } else if (toggleNavStatus === true) {
                 getMenuToggleUl.style.opacity="0";
                 getMenuToggleDiv.style.opacity="0";
                 getMenuToggle.style.width="0";
-                buttonLogo.style.backgroundImage="url(Assets/Images/croix.png)";
-                buttonLogo.style.height="40%";
+                buttonLogo.style.backgroundImage="url(Assets/Images/menu.png)";
+                buttonLogo.style.height="60%";
                 toggleNavStatus = false;
             }
         }
