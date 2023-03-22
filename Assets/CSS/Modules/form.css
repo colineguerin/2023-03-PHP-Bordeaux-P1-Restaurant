@@ -152,7 +152,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     Defining styles for the section
      */
     .ms-booking {
-        width: 50vw;
+        width: 95vw;
         margin: 5vh auto;
     }
 
@@ -227,7 +227,8 @@ input:focus::placeholder, textarea:focus::placeholder {
         "mail" 7vh
         "plates" "date" "hour" 7vh
         "demands" auto
-        "submit" auto/ calc(60vw/3) calc(60vw/3) calc(60vw/3);
+        "submit" auto/ 1fr 1fr 1fr;
+        gap: 0.625rem;
     }
 
     input {
@@ -265,8 +266,12 @@ input:focus::placeholder, textarea:focus::placeholder {
         display: none;
     }
 
-    input[type=date]::-webkit-calendar-picker-indicator, input[type=time]::-webkit-calendar-picker-indicator {
-        transform: translateX(-55%);
+    input[type=date]::-webkit-calendar-picker-indicator {
+        transform: translateX(-135%);
+    }
+
+    input[type=time]::-webkit-calendar-picker-indicator {
+        transform: translateX(-112%);
     }
 
     .material-symbols-outlined {
