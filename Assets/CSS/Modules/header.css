@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.ms-menu-toggle {
+    display: none;
+    height: 92vh;
+    background-color: #BA945A;
+    opacity: 0.9;
+    z-index: 100;
+}
+
 .ms-navbar {
     width: 100vw;
     height: 15vh;
@@ -17,8 +25,35 @@
 }
 
 .ms-logo{
-    height: 17vh;
+    z-index: 4;
+    height: 18vh;
     margin: 0.5% auto auto 0.5%;
+}
+
+.ms-logoHidden{
+    display: none;
+    z-index: 4;
+    height: 10vh;
+    margin: 0.5% 0.5% auto 0.5%;
+}
+
+.ms-menu-button{
+    background-image: url("../../Images/menu.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 10%;
+    z-index: 100;
+    display: none;
+}
+
+.ms-bookingHidden{
+    display: none;
+    font-size: 1.2em;
+    color: #102839;
+    font-family: var(--title-font);
+    margin: auto;
+    text-decoration: none;
 }
 
 ul{
@@ -53,19 +88,22 @@ li{
 }
 
 .titre{
-    margin: 4% 4% 0 auto;
+    margin: 7% auto 0 auto;
     font-size: 3em;
     color: #102839;
     font-family: var(--title-font);
-    padding-right: 35%;
 }
 
+.titreHidden{
+    display: none;
+}
+
+
 .sousTitre{
-    margin: 0 4% auto auto;
+    margin: 0 auto auto auto;
     font-family: var(--secondary-font);
     font-size: 1.3em;
     color: #102839;
-    padding-right: 33%;
 }
 
 .noeud{
@@ -87,12 +125,12 @@ li{
     /*background-color: red;*/
     height: 6vh;
     min-width: 10%;
-    max-width: 98%;
+    max-width: 100%;
     z-index: 5;
 }
 
 .ms-boat {
-    height: 6vh;
+    height: 2vw;
     animation: bateauZoom 1.5s infinite;
     z-index: 5;
     }
@@ -108,3 +146,98 @@ li{
          transform: scale(1);
      }
  }
+
+@media screen and (max-width: 400px) {
+    .ms-boat {
+        display: none;
+    }
+    .ms-logo {
+        height: 10vh;
+        background-image: url("../Assets/Images/menu.png");
+        display: none;
+    }
+    .ms-logoHidden{
+        display: flex;
+    }
+    .ms-bookingHidden {
+        display: flex;
+    }
+    .ms-navbar {
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ms-navbar ul {
+        display: none;
+    }
+
+    .accueil {
+        margin-top: 8vh;
+    }
+    .ms-menu-toggle {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 0;
+        left: 0;
+        bottom: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .ms-menu-toggle div {
+        font-family: var(--secondary-font);
+        color: #102839;
+        position: absolute;
+        bottom: 10%;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+    .ms-menu-toggle ul{
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+    .ms-menu-toggle ul li{
+        padding: 10%;
+        font-weight: bold;
+    }
+    .ms-menu-toggle ul li a:hover {
+        color: #E1DBCA;
+    }
+    .ms-menu-button{
+        display: flex;
+        height: 40%;
+        margin: auto 2% auto 2%;
+    }
+    .titre {
+        display: none;
+    }
+
+    .titreHidden {
+        display: flex;
+        margin: 15% auto 0 auto;
+        font-size: 3em;
+        color: #102839;
+        font-family: var(--title-font);
+    }
+
+    .noeud{
+        height: 5vh;
+        padding: 0;
+        justify-content: center;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    #ancreLogo {
+        margin-bottom: 0;
+    }
+
+}
+
+/*<script type="text/javascript" src="./Assets/Javascript/head.js"></script>
+
+
+ */

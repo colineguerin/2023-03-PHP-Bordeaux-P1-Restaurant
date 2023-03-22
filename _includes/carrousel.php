@@ -16,7 +16,7 @@
     <input type="radio" name="slider" id="photo-5">
     <input type="radio" name="slider" id="photo-6">
 
-    <div class="ms-carousel-photos" id="ancreMenu">
+    <div class="ms-carousel-photos">
         <label class="ms-carousel-photo" for="photo-1" id="meal-1">
             <img src="/Assets/Images/uk-2066475_1920.jpg" alt="Plateau de fruits de mer" id="plateau">
         </label>
@@ -36,5 +36,5 @@
             <img src="../Assets/Images/fish-2105233_1920.jpg" alt="Truite aux 100 herbes" id="truite">
         </label>
     </div>
-
+    <div id="ancreMenu"></div>
 </section>

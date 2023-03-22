@@ -1,5 +1,6 @@
 .ms-contact {
     background-color: var(--main-text-color);
+    margin-bottom: 0;
 }
 
 .ms-contact-title {
@@ -23,13 +24,13 @@ iframe {
 .ms-contact-infos p{
     height: auto;
     font-family: var(--secondary-font);
-    font-size: 1.5rem;
+    font-size: 1.667vw;
     color: var(--dark-color);
 }
 
 h5 {
     font-family: var(--title-font);
-    font-size: 2.5rem;
+    font-size: 2.778vw;
     color: var(--dark-color);
     font-weight: bold;
     margin-bottom: 5%;
@@ -142,7 +143,7 @@ h5 {
     .ms-telephone-png {
         height: 32px;
         width: 32px;
-        top: 75%;
+
         left: 15%;
     }
     .ms-facebook-png {
@@ -164,17 +165,6 @@ h5 {
         left: 75%;
     }
 
-    .ms-group-adress {
-        padding-right: 32%;
-    }
-
-    .ms-group-contact {
-        padding-right: 30%;
-    }
-
-    .ms-group-time {
-        padding-right: 28%;
-    }
 }
 
 
