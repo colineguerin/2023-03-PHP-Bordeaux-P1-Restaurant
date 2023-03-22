@@ -217,6 +217,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     .ms-button {
         grid-area: submit;
         grid-column-end: 4;
+        margin: 1rem auto 0;
     }
 
     form {
@@ -228,7 +229,7 @@ input:focus::placeholder, textarea:focus::placeholder {
         "plates" "date" "hour" 7vh
         "demands" auto
         "submit" auto/ 1fr 1fr 1fr;
-        gap: 0.625rem;
+        gap: 0.75rem;
     }
 
     input {
