@@ -38,6 +38,12 @@ html{
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Advent Pro bold";
+    src: url(../Fonts/AdventPro-Bold.ttf);
+    font-weight: bold;
+}
+
 body {
     background-color : var(--main-bg-color)
 }
