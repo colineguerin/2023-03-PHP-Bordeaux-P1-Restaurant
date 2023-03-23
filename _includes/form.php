@@ -7,7 +7,7 @@
 
     <h2 class="ms-title-section"><span class="ms-h2-small">Pour</span><span class="ms-h2-big"> Réserver</span></h2>
 
-        <?php if (!empty($_SESSION) /*&& isset($_POST['ms-form-name'])*/) : ?>
+        <?php if (!empty($_SESSION['errorsList']) /*&& isset($_POST['ms-form-name'])*/) : ?>
             <ul class="ms-form-errors-list">
                 <?php foreach ($_SESSION as $sessionVar) : ?>
                     <?php foreach ($sessionVar as $error) :?>
@@ -16,12 +16,19 @@
                 <?php endforeach; ?>
             </ul>
         <?php endif; ?>
+        <?php if (isset($_SESSION['confirmation'])) : ?>
+            <div class="ms-form-errors-list">
+                <span class="ms-form-error"><?= "Réservation confirmée au nom de " . $_SESSION['name'] . ' pour ' ; ?>
+                    <?php //TODO : get all form info to validate booking?>
+                </span>
+            </div>
+        <?php endif; ?>
     <!-- treatment page for the form = /_includes/booking.php -->
-    <form action="" method="post" class="ms-form-booking">
-        <input type="text" class="ms-name" name="ms-form-name" placeholder="Nom ou société *" required>
-        <input type="tel" class="ms-phone" name="ms-form-phone" placeholder="Téléphone *" required>
-        <input type="email" class="ms-mail" name="ms-form-mail" placeholder="E-mail *" required>
-        <input type="number" class="ms-plates-pc" name="ms-form-plates-pc" placeholder="Nombre de couverts *" min="1" max="15" required>
+    <form action="/_includes/booking.php" method="post" class="ms-form-booking">
+        <input type="text" class="ms-name" name="ms-form-name" placeholder="Nom ou société *" >
+        <input type="tel" class="ms-phone" name="ms-form-phone" placeholder="Téléphone *" >
+        <input type="email" class="ms-mail" name="ms-form-mail" placeholder="E-mail *" >
+        <input type="number" class="ms-plates-pc" name="ms-form-plates-pc" placeholder="Nombre de couverts *" min="1" max="15" >
         <input type="number" class="ms-plates-mobile" name="ms-form-plates-mobile"  min="1" max="15">
         <input type="date" class="ms-date" name="ms-form-date" value="<?= date("Y-m-d");?>" min="<?= date("Y-m-d");?>" >
         <input type="time" class="ms-hour" name="ms-form-hour" value="<?php date_default_timezone_set('Europe/Paris'); echo date("H:i");?>" list="hoursList" >

@@ -128,10 +128,16 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .ms-form-errors-list {
+    font-family: "Advent Pro";
     width: auto;
     font-size: 0.6rem;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: stretch;
     margin-bottom: 1rem;
+}
+
+div.ms-form-errors-list {
+    font-size: initial;
 }
 
 .ms-form-error {
@@ -139,6 +145,10 @@ input:focus::placeholder, textarea:focus::placeholder {
     border-radius: 0.625rem;
     padding: 0.5rem;
     margin: 0 0.5rem;
+}
+
+li strong {
+    font-family: "Advent Pro bold";
 }
 
 
