@@ -45,7 +45,8 @@ html{
 }
 
 body {
-    background-color : var(--main-bg-color)
+    background-color : var(--main-bg-color);
+    overflow-x: hidden;
 }
 
 .ms-h2-small {
