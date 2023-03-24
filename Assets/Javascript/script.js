@@ -23,51 +23,72 @@ Function to trigger errors in form
  */
 /*
 const form = document.querySelector('form');
+const name = document.querySelector('.ms-name');
+const phone = document.querySelector('.ms-phone');
 const email = document.querySelector('.ms-mail');
+const plates = document.querySelector('.ms-plates-pc');
+const date = document.querySelector('.ms-date');
+const hour = document.querySelector('.ms-hour');
+const demands = document.querySelector('.ms-demands');
 
-email.addEventListener("input",  (event) => {
-    if (email.validity.valid) {
-        emailError.textContent = "";
-        emailError.className = "error";
-    } else {
-        showError();
-    }
-});
-*/
-//TODO : add toasts if email is not valid on form submission
-/*
-email.addEventListener( "invalid",
-    function( event ) {
-        event.preventDefault();
-    }, true);
+const numberFields = 7;
+let arrayFields = [];
+arrayFields[0] = name;
+arrayFields[1] = phone;
+arrayFields[2] = email;
+arrayFields[3] = plates;
+arrayFields[4] = date;
+arrayFields[5] = hour;
+arrayFields[6] = demands;
+
+let fieldsName = [];
+fieldsName[0] = 'Nom';
+fieldsName[1] = 'Téléphone';
+fieldsName[2] = 'Email';
+fieldsName[3] = 'Nombre de couverts';
+fieldsName[4] = 'Date';
+fieldsName[5] = 'Heure';
+fieldsName[6] = 'Demande';
 
 form.addEventListener("submit", function (event) {
-    if (!email.validity.valid) {
-        showError();
+    for(let j = 0; j <numberFields; j++) {
+        if (!(arrayFields[j].validity.valid)) {
+        //alert(typeof arrayFields[j]);
+        showError(j);
         event.preventDefault();
     }
+    }
+
 });
 
-function showError() {
-    if (email.validity.valueMissing) {
+function showError(iterator) {
+    /!*if (email.validity.valueMissing) {
         emailError.textContent = "Veuillez entrer une adresse email.";
-    } else if (email.validity.typeMismatch){
+    } else if (arrayFields.validity.typeMismatch){*!/
         Toastify({
-        text: "This is a toast",
-        duration: 3000,
-        newWindow: true,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "left", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-            background: "linear-gradient(to right, #00b09b, #96c93d)",
-        }
-    }).showToast();
+            text:  fieldsName[iterator] + " invalide",
+            className : "warning",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            offset: {
+                y: 90
+            },
+            style: {
+                fontFamily : "Advent Pro",
+                fontSize: 64,
+                background: "linear-gradient(to right, #800000, #cc0000)",
+            }
+        }).showToast();
+        //event.preventDefault();
     }
     //emailError.className = "error active";
-}
+//}
 */
+
 
 /* Animation du bateau sur la navigation */
 

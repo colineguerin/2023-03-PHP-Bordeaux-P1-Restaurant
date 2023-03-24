@@ -14,6 +14,14 @@ $formDate = $_POST['ms-form-date'];
 $formHour = $_POST['ms-form-hour'];
 $formDemands = htmlentities($_POST['ms-form-demands']);
 
+$_SESSION['name'] = $formName;
+$_SESSION['phone'] = $formPhone;
+$_SESSION['email'] = $formEmail;
+$_SESSION['plates'] = $formPlates;
+$_SESSION['date'] = $formDate;
+$_SESSION['hour'] = $formHour;
+$_SESSION['demands'] = $formDemands;
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ((!isset($formName)) || (empty(trim($formName)))) {
         $errors[] = "Holà matelot ! J'ai besoin d'un <strong>nom</strong> valide pour reconnaître mon équipage !";
@@ -38,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 if (empty($errors)) {
     //$bookingValid = true;
     $_SESSION['confirmation'] = true;
-    $_SESSION['name'] = $formName;
+    //$_SESSION['name'] = $formName;
     //TODO : add all form fields in session variables
     mail($ownerMail, "Réservation", "Réservation le " . $_POST["ms-form-date"] . " à " . $_POST["ms-form-hour"] . " pour " . $_POST["ms-form-plates-pc"] . " personnes, au nom de " . $_POST["ms-form-name"] . "." . "
     " . "Téléphone : " . $_POST["ms-form-phone"] . "
