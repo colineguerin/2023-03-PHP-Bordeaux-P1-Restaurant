@@ -4,7 +4,7 @@
         <h3 class="ms-theConcept"><span class="ms-h2-small-card">Le </span><span class="ms-h2-big-card">Concept</span></h3>
         <p class="ms-conceptText">Depuis plus de vingt ans, le Mille Sabords sillone les eaux tumultueuses de la Garonne à la recherche des meilleurs produits pour régaler vos papilles. Aujourd'hui, nous avons jeté l'ancre au port de Bordeaux, mais qui sait ? Demain, nous serons peut-être à Agen. Venez vite nous rendre visite avant que le Mille Sabords ne largue les amarres !</p>
     </div>
-    <img class="ms-image-card1  ms-image-card1.trans"  src="../assets/Images/concept1.png" alt="chef">
+    <img class="ms-image-card1  ms-image-card1.trans"  src="../assets/Images/concept2.jpg" alt="chef">
 
         <div class="ms-card2">
         <h3 class="ms-theFood"><span class="ms-h2-small-card">La </span> <span class="ms-h2-big-card">Cuisine</span></h3>
